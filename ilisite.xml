@@ -5,5 +5,19 @@
 		</MODELS>
 	</HEADERSECTION>
 	<DATASECTION>
+		<IliSite09.SiteMetadata BID="b0">
+			<IliSite09.SiteMetadata.Site TID="1">
+				<Name>signedav.github.io/usabilitydave</Name>
+				<Title>Allgemeine Zusatzkonfigurationen für INTERLIS Modelle</Title>
+				<shortDescription>Weitere Sites des usabiltydave test repositories</shortDescription>
+				<Owner>https://signedav.github.io/usabilitydave</Owner>
+				<technicalContact>mailto:david@opengis.ch</technicalContact>
+				<subsidiarySite>
+					<IliSite09.RepositoryLocation_>
+						<value>https://models.opengis.ch</value>
+					</IliSite09.RepositoryLocation_>
+				</subsidiarySite>
+			</IliSite09.SiteMetadata.Site>
+		</IliSite09.SiteMetadata>
 	</DATASECTION>
 </TRANSFER>
