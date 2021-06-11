@@ -1,0 +1,9 @@
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+	<HEADERSECTION SENDER="ceis-20091125" VERSION="2.3">
+		<MODELS>
+			<MODEL NAME="IliSite09" VERSION="2009-11-12" URI="mailto:ce@eisenhutinformatik.ch"/>
+		</MODELS>
+	</HEADERSECTION>
+	<DATASECTION>
+	</DATASECTION>
+</TRANSFER>
