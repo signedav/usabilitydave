@@ -1,0 +1,95 @@
+
+INTERLIS 2.3;
+
+MODEL EveryGreen (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+    IMPORTS UNQUALIFIED INTERLIS;
+  
+    DOMAIN
+      Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+      Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+      
+      !! BAG OF with INTERLIS 2.3 only possible with STRUCTURE
+      STRUCTURE PointStructure = 
+        Point: GeometryCHLV95_V1.Coord2;
+      END PointStructure;
+      
+      !!@ili2db.mapping=MultiPoint
+      STRUCTURE MultiPoint =
+        Points: BAG {1..*} OF PointStructure;
+      END MultiPoint;
+      
+      STRUCTURE LineStructure = 
+        Line: Line;
+      END LineStructure;
+      
+      !!@ili2db.mapping=MultiLine
+      STRUCTURE MultiLine =
+        Lines: BAG {1..*} OF LineStructure;
+      END MultiLine;
+      
+      STRUCTURE SurfaceStructure = 
+        Surface: Surface;
+      END SurfaceStructure;
+      
+      !!@ili2db.mapping=MultiSurface
+      STRUCTURE MultiSurface =
+        Surfaces: BAG {1..*} OF SurfaceStructure;
+      END MultiSurface;
+
+      STRUCTURE SingleGeometry =
+        Point: GeometryCHLV95_V1.Coord2;
+        Line: Line;
+        Surface: Surface;
+      END SingleGeometry; 
+    
+      STRUCTURE MultiSingleGeometry = 
+        Geometry: BAG {0..*} OF SingleGeometry;
+      END MultiSingleGeometry;
+      
+      STRUCTURE MultiGeometry =
+        Points: MultiPoint;
+        Lines: MultiLine;
+        Surfaces: MultiSurface;
+      END MultiGeometry; 
+
+      TOPIC Spots =
+
+        CLASS EverySpotPoint =
+          Name: TEXT;
+          Geometry: MultiPoint;
+        END EverySpotPoint;
+
+        CLASS EverySpotLine =
+          Name: TEXT;
+          Geometry: MultiLine;
+        END EverySpotLine;
+
+        CLASS EverySpotSurface =
+          Name: TEXT;
+          Geometry: MultiSurface;
+        END EverySpotSurface;
+
+        CLASS EverySpot =
+          Name: TEXT;
+          Points: MultiPoint;
+          Lines: MultiLine;
+          Surfaces: MultiSurface;
+        END EverySpot;
+
+        CLASS EverySpotMultiGeometry =
+          Name: TEXT;
+          Geometry: MultiGeometry;
+        END EverySpotMultiGeometry;
+
+        CLASS EverySpotMultiSingleGeometry =
+          Name: TEXT;
+          Geometry: MultiSingleGeometry;
+        END EverySpotMultiSingleGeometry;
+      END Spots; !! of TOPIC
+
+END EveryGreen. !! of MODEL
+
