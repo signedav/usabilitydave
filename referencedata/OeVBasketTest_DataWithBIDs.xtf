@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File OeVBasketTest_DataWithBIDs.xml 2020-06-22 -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <HEADERSECTION VERSION="2.3" SENDER="https://signedav.github.io/usabilitydave/models">
+        <MODELS>
+            <MODEL NAME="OeVBasketTest" URI="https://signedav.github.io/usabilitydave/models" VERSION="2020-06-22"/>
+        </MODELS>
+    </HEADERSECTION>
+
+    <DATASECTION>
+        <OeVBasketTest.OeVLinien BID="Postauto">
+            <OeVBasketTest.OeVLinien.SingleLinie TID="134"><Bezeichnung>Postauto Winterthur Neftenbach</Bezeichnung><Code>134</Code></OeVBasketTest.OeVLinien.SingleLinie>
+            <OeVBasketTest.OeVLinien.SingleLinie TID="135"><Bezeichnung>Postauto Winterthur Rickenbach</Bezeichnung><Code>135</Code></OeVBasketTest.OeVLinien.SingleLinie>
+        </OeVBasketTest.OeVLinien>
+        <OeVBasketTest.OeVLinien BID="Stadtbus">
+            <OeVBasketTest.OeVLinien.SingleLinie TID="1"><Bezeichnung>Winterthur - Töss - Oberwinterthur</Bezeichnung><Code>1</Code></OeVBasketTest.OeVLinien.SingleLinie>
+            <OeVBasketTest.OeVLinien.SingleLinie TID="2"><Bezeichnung>Winterthur - Veltheim - Whatever</Bezeichnung><Code>2</Code></OeVBasketTest.OeVLinien.SingleLinie>
+        </OeVBasketTest.OeVLinien>
+    </DATASECTION>
+</TRANSFER>

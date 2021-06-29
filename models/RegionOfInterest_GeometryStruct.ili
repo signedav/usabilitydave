@@ -1,0 +1,58 @@
+INTERLIS 2.3;
+
+MODEL RegionOfInterest_MultiGeometry (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+    IMPORTS UNQUALIFIED INTERLIS;
+  
+    DOMAIN
+        Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+        Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+        
+        !! BAG OF with INTERLIS 2.3 only possible with STRUCTURE
+        STRUCTURE PointStructure = 
+            Point: GeometryCHLV95_V1.Coord2;
+        END PointStructure;
+        
+        !!@ili2db.mapping=MultiPoint
+        STRUCTURE MultiPoint =
+            Points: BAG {1..*} OF PointStructure;
+        END MultiPoint;
+        
+        STRUCTURE LineStructure = 
+            Line: Line;
+        END LineStructure;
+        
+        !!@ili2db.mapping=MultiLine
+        STRUCTURE MultiLine =
+            Lines: BAG {1..*} OF LineStructure;
+        END MultiLine;
+        
+        STRUCTURE SurfaceStructure = 
+            Surface: Surface;
+        END SurfaceStructure;
+        
+        !!@ili2db.mapping=MultiSurface
+        STRUCTURE MultiSurface =
+            Surfaces: BAG {1..*} OF SurfaceStructure;
+        END MultiSurface;
+        
+        STRUCTURE RegionOfInterest =
+            StudyLocation: MultiPoint;
+            StudySection: MultiLine;
+            StudyArea: MultiSurface;
+        END RegionOfInterest; 
+
+    TOPIC Assets =
+
+        CLASS Asset =
+            Name: TEXT;
+            RegionOfInterest: BAG {0..*} OF RegionOfInterest;
+        END Asset;
+        
+    END Assets; !! of TOPIC
+
+END RegionOfInterest_MultiGeometry. !! of MODEL
+

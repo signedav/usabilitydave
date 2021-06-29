@@ -1,0 +1,69 @@
+
+INTERLIS 2.3;
+
+MODEL Brutalism (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+    IMPORTS UNQUALIFIED INTERLIS;
+  
+    DOMAIN
+
+      Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+      Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+
+      DOMAIN
+    
+      Baumaterial_Typ (FINAL) = (
+        Beton,
+        Stein,
+        Holz,
+        Erdmaterial,
+        Metall,
+        Kunststoff,
+        Ingenieurbiologie
+      );
+       
+      TOPIC Buildings =
+
+        CLASS Owner =
+          OID AS INTERLIS.UUIDOID;
+          Name: TEXT;
+        END Owner;
+
+        CLASS Object =
+          Name: TEXT;
+          Geometry: Surface;
+          Material: MANDATORY Baumaterial_Typ;
+        END Object;
+
+        CLASS Alpha =
+          H: TEXT;
+          G: TEXT;
+          F: TEXT;
+          E: TEXT;
+        END Alpha;
+
+        CLASS AlphaWithTabs =
+          D: TEXT;
+          C: TEXT;
+          B: TEXT;
+          A: TEXT;
+        END AlphaWithTabs;
+
+        /*
+        ASSOCIATION Object_Owner =
+          Owner -- {1} Owner;
+          Object -- {1..*} Object;
+        END Object_Owner;
+        */
+        ASSOCIATION Object_AlphaWithTabs =
+          AlphaWithTabs -- {1} AlphaWithTabs;
+          Object -- {1..*} Object;
+        END Object_AlphaWithTabs;
+
+      END Buildings; !! of TOPIC
+
+END Brutalism. !! of MODEL
+
