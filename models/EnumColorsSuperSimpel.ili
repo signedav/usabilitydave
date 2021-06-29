@@ -1,0 +1,23 @@
+INTERLIS 2.3;
+
+MODEL ColorSimple (es)
+AT "mailto:PC-1@localhost"
+VERSION "2020-08-26"  =
+
+  DOMAIN
+
+    DomBaseColorType = (
+      Green,
+      Red,
+      Blue
+    );
+
+  TOPIC ColorSimple =
+
+    CLASS BaseColor =
+      ColorType : ColorSimple.DomBaseColorType;
+    END BaseColor;
+
+  END ColorSimple;
+
+END ColorSimple.
