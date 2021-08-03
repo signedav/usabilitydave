@@ -1,0 +1,35 @@
+INTERLIS 2.3;
+MODEL GeolAssets (de)
+AT "mailto:signe@dav.ch"
+VERSION "2019-02-15"  =
+  IMPORTS GeometryCHLV95_V1,Units;
+
+  TOPIC CoreGeolAsset =
+
+    CLASS Asset =
+      Description : MANDATORY TEXT*256;
+      Restriction : MANDATORY BOOLEAN;
+    END Asset;
+
+    CLASS Contact =
+      Name : MANDATORY TEXT*20;
+    END Contact;
+
+    ASSOCIATION Asset_Contact_Autor =
+      AssetA -- {1..*} Asset;
+      Author -- {0..*} Contact;
+    END Asset_Contact_Autor;
+    
+    ASSOCIATION Asset_Contact_Contractor =
+      AssetC -- {1..*} Asset;
+      Contractor -- {0..*} Contact;
+    END Asset_Contact_Contractor;
+
+    ASSOCIATION Asset_Contact_Supplier =
+      AssetS -- {1..*} Asset;
+      Supplier -- {0..*} Contact;
+    END Asset_Contact_Supplier;
+
+  END CoreGeolAsset;
+
+END GeolAssets.

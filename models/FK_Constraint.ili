@@ -1,0 +1,38 @@
+INTERLIS 2.3;
+
+MODEL RegionOfInterest_AssetPart (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+    IMPORTS UNQUALIFIED INTERLIS;
+  
+    DOMAIN
+
+    /** we get three tables for each multigeom - but we save then remark and geom_quality for each geom*/
+    TOPIC Assets =
+
+        CLASS AssetBase (ABSTRACT) =
+        END AssetBase;
+
+        CLASS AssetPackage EXTENDS AssetBase =
+            Name: TEXT;
+        END AssetPackage;
+
+        CLASS Asset EXTENDS AssetBase =
+            Name: TEXT;
+        END Asset;
+
+        CLASS Publication =
+            Name: TEXT;
+        END Publication;
+
+        ASSOCIATION AssetBase_Publication =
+            AssetBase -- {1..*} AssetBase;
+            Publication -- {0..*} Publication;
+        END AssetBase_Publication;
+
+    END Assets; !! of TOPIC
+
+END RegionOfInterest_AssetPart. !! of MODEL
+

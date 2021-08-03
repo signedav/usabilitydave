@@ -1,0 +1,21 @@
+INTERLIS 2.3;
+
+MODEL StructSimple (es)
+AT "mailto:PC-1@localhost"
+VERSION "2020-08-26"  =
+
+  TOPIC StructSimple =
+    !! using kind of datatype struct for StructAddress - this leads to a one to one relation and means it's in physical implementation one to many (multiple StructAddress per person)
+
+    STRUCTURE StructAddress = 
+      Name: TEXT;
+      Surname: TEXT;
+    END StructAddress;
+
+    CLASS Person = 
+      Address: StructAddress;
+    END Person;
+
+  END StructSimple;
+
+END StructSimple.

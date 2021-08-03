@@ -1,0 +1,27 @@
+INTERLIS 2.3;
+
+MODEL StructSimple (es)
+AT "mailto:PC-1@localhost"
+VERSION "2020-08-26"  =
+
+  TOPIC StructSimple =
+
+    !! I can add types and use types - a little like a catalogue
+
+
+    CLASS Type = 
+      Name: TEXT;
+      Description: TEXT;
+    END Type;
+
+    CLASS Person = 
+    END Person;
+
+    ASSOCIATION PersonType =
+        Person -- {0..*} Person;
+        Type -- {1} Type;
+    END PersonType;
+
+  END StructSimple;
+
+END StructSimple.

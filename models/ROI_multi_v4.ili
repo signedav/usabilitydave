@@ -1,6 +1,6 @@
 INTERLIS 2.3;
 
-MODEL RegionOfInterest_Relations (en) 
+MODEL RegionOfInterest_AssetPart (en) 
 AT "https://signedav.github.io/usabilitydave/models"
 VERSION "2020-06-22" =
   
@@ -39,31 +39,43 @@ VERSION "2020-06-22" =
             Surfaces: BAG {1..*} OF SurfaceStructure;
         END MultiSurface;
         
+        STRUCTURE RegionOfInterest =
+            Points: MultiPoint;
+            Lines: MultiLine;
+            Surfaces: MultiSurface;
+        END RegionOfInterest; 
+
+    /* we get three tables for each multigeom - but we save then remark and geom_quality for each geom*/
     TOPIC Assets =
-
-        CLASS Test =
-            Geometry : MultiLine;
-        END Test;
-
-        CLASS StudyArea =
-            Geometry : MultiSurface;
-        END StudyArea;
-
-        CLASS StudyLocation =
-            Geometry : MultiPoint;
-        END StudyLocation;
 
         CLASS Asset =
             Name: TEXT;
+            RegionOfInterest: RegionOfInterest;
+            RegionOfInterest_Geom_Quality : MANDATORY (
+                placeholder,
+                placeholder100x100,
+                placeholder10x10,
+                placeholder1x1,
+                simplification,
+                orginal
+            );
+            RegionOfInterest_Remark : TEXT*20;
         END Asset;
-        
-        ASSOCIATION Asset_RegionOfInterest =
-            Asset -- {1..*} Asset;
-            StudySection -- {1..*} StudySection;
-            StudyArea -- {1..*} StudyArea;
-            StudyLocation -- {1..*} StudyLocation;
-        END Asset_RegionOfInterest;
 
+        CLASS AssetPackage =
+            Name: TEXT;
+            RegionOfInterest: RegionOfInterest;
+            RegionOfInterest_Geom_Quality : MANDATORY (
+                placeholder,
+                placeholder100x100,
+                placeholder10x10,
+                placeholder1x1,
+                simplification,
+                orginal
+            );
+            RegionOfInterest_Remark : TEXT*20;
+        END AssetPackage;
     END Assets; !! of TOPIC
 
-END RegionOfInterest_Relations. !! of MODEL
+END RegionOfInterest_AssetPart. !! of MODEL
+

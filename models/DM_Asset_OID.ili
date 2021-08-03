@@ -1,0 +1,69 @@
+INTERLIS 2.3;
+MODEL DM_Asset_OID (de)
+AT "mailto:U80773132@localhost"
+VERSION "2019-02-15"  =
+TOPIC CoreAsset =
+    OID AS INTERLIS.UUIDOID;
+    CLASS Asset =
+    	Name : TEXT*32;
+    END Asset;
+    CLASS Asset2 =
+      MyFancyUUID: MANDATORY INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset;
+
+  TOPIC CoreAsset2 =
+    CLASS Asset2 =
+      OID AS INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset2;
+
+END DM_Asset_OID.
+
+MODEL DM_Asset2_OID (de)
+AT "mailto:U80773132@localhost"
+VERSION "2019-02-15"  =
+TOPIC CoreAsset =
+    OID AS INTERLIS.UUIDOID;
+    CLASS Asset =
+    	Name : TEXT*32;
+    END Asset;
+    CLASS Asset2 =
+      MyFancyUUID: MANDATORY INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset;
+
+  TOPIC CoreAsset2 =
+    CLASS Asset2 =
+      OID AS INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset2;
+
+END DM_Asset2_OID.
+
+MODEL DM_Asset3_OID (de)
+AT "mailto:U80773132@localhost"
+VERSION "2019-02-15"  =
+TOPIC CoreAsset =
+    OID AS INTERLIS.UUIDOID;
+    CLASS Asset =
+    	Name : TEXT*32;
+    END Asset;
+    CLASS Asset2 =
+      MyFancyUUID: MANDATORY INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset;
+
+  TOPIC CoreAsset2 =
+    CLASS Asset2 =
+      OID AS INTERLIS.UUIDOID;
+      Name : TEXT*32;
+    END Asset2;
+  END CoreAsset2;
+
+END DM_Asset3_OID.

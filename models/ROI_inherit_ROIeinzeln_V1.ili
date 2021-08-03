@@ -1,6 +1,6 @@
 INTERLIS 2.3;
 
-MODEL RegionOfInterest_Relations (en) 
+MODEL RegionOfInterest_AssetPart (en) 
 AT "https://signedav.github.io/usabilitydave/models"
 VERSION "2020-06-22" =
   
@@ -8,6 +8,15 @@ VERSION "2020-06-22" =
     IMPORTS UNQUALIFIED INTERLIS;
   
     DOMAIN
+        Geom_Quality = (
+            placeholder,
+            placeholder100x100,
+            placeholder10x10,
+            placeholder1x1,
+            simplification,
+            orginal
+        );
+
         Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
         Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
         
@@ -38,32 +47,42 @@ VERSION "2020-06-22" =
         STRUCTURE MultiSurface =
             Surfaces: BAG {1..*} OF SurfaceStructure;
         END MultiSurface;
-        
-    TOPIC Assets =
 
-        CLASS Test =
+        STRUCTURE StudyGeometry (ABSTRACT) =
+            Geom_Quality : MANDATORY Geom_Quality;
+            Remark : TEXT*20;
+        END StudyGeometry; 
+
+        STRUCTURE StudySection EXTENDS StudyGeometry =
             Geometry : MultiLine;
-        END Test;
+        END StudySection;
 
-        CLASS StudyArea =
+        STRUCTURE StudyArea EXTENDS StudyGeometry =
             Geometry : MultiSurface;
         END StudyArea;
 
-        CLASS StudyLocation =
+        STRUCTURE StudyLocation EXTENDS StudyGeometry =
             Geometry : MultiPoint;
         END StudyLocation;
+        
+        STRUCTURE RegionOfInterest =
+            Description: TEXT;
+            Geometries:  BAG {0..*} OF StudyGeometry;
+        END RegionOfInterest;
+
+    TOPIC Assets =
 
         CLASS Asset =
             Name: TEXT;
+            RegionOfInterest: RegionOfInterest;
         END Asset;
-        
-        ASSOCIATION Asset_RegionOfInterest =
-            Asset -- {1..*} Asset;
-            StudySection -- {1..*} StudySection;
-            StudyArea -- {1..*} StudyArea;
-            StudyLocation -- {1..*} StudyLocation;
-        END Asset_RegionOfInterest;
+
+        CLASS AssetPackage =
+            Name: TEXT;
+            RegionOfInterest: RegionOfInterest;
+        END AssetPackage;
 
     END Assets; !! of TOPIC
 
-END RegionOfInterest_Relations. !! of MODEL
+END RegionOfInterest_AssetPart. !! of MODEL
+
