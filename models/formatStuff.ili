@@ -1,0 +1,22 @@
+INTERLIS 2.3;
+
+MODEL FormatStuff (de)
+AT "mailto:dave@localhost"
+VERSION "2020-08-26"  =
+
+  TOPIC FormatStuff =  
+    DOMAIN Emaile = (TEXT "." TEXT);
+
+    STRUCTURE StructAddress = 
+      Name: TEXT;
+      Surname: TEXT;
+    END StructAddress;
+
+    CLASS Person = 
+      Email: Emaile;
+      Address: StructAddress;
+    END Person;
+
+  END FormatStuff;
+
+END FormatStuff.

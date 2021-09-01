@@ -1,0 +1,74 @@
+
+INTERLIS 2.3;
+!!****************************************
+!! Test für AssetItem kann "main" sein und weiter AssetParts enthalten. Ein AssetPart kann aber nicht Main sein. Also es gibt keine Grand-Children.
+!!****************************************
+MODEL AssetItemPart (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+
+    TOPIC CoreGeolAsset =
+        !! CLASS
+        CLASS AssetItem (ABSTRACT) =
+            Name: TEXT;
+        END AssetItem;
+
+        !! CLASS
+        CLASS AssetItemMain
+        EXTENDS AssetItem =
+        END AssetItemMain;
+        !! CLASS
+        CLASS AssetItemPart
+        EXTENDS AssetItem =
+        END AssetItemPart;
+            
+        !! Ein Asset kann beliebig viele Teile (AssetParts) enthalten. Ein AssetPart gehört zu einem Asset
+        ASSOCIATION AssetItemMain_AssetItemPart =
+        !! Asset aus dem der AssetPart extrahiert wurde
+        AssetItemMain -- {0..1} AssetItemMain;
+        !! AssetPart
+        AssetItemPart-- {0..*} AssetItemPart;
+        END AssetItemMain_AssetItemPart; 
+
+    END CoreGeolAsset;
+
+    TOPIC CoreGeolPasset =
+        !! CLASS
+        CLASS PassetItem =
+            Name: TEXT;
+            IsMain: BOOLEAN;
+        END PassetItem;
+
+        !! Ein Asset kann beliebig viele Teile (AssetParts) enthalten. Ein AssetPart gehört zu einem Asset
+        ASSOCIATION PassetItemMain_PassetItemPart =
+            !! Asset aus dem der AssetPart extrahiert wurde
+            PassetItemMain -- {0..1} PassetItem;
+            !! AssetPart
+            PassetItemPart-- {0..*} PassetItem;
+            MANDATORY CONSTRAINT
+                PassetItemMain->IsMain AND NOT (PassetItemPart->IsMain);
+        END PassetItemMain_PassetItemPart; 
+
+
+    END CoreGeolPasset;
+
+    TOPIC CoreGeolRasset =
+        !! CLASS
+        CLASS RassetItem =
+            Name: TEXT;
+            IsMain: BOOLEAN;
+        END RassetItem;
+
+        !! Ein Asset kann beliebig viele Teile (AssetParts) enthalten. Ein AssetPart gehört zu einem Asset
+        ASSOCIATION RassetItemMain_RassetItemPart =
+            !! Asset aus dem der AssetPart extrahiert wurde
+            RassetItemMain -- {0..1} RassetItem;
+            !! AssetPart
+            RassetItemPart-- {0..*} RassetItem;
+            MANDATORY CONSTRAINT
+                NOT (DEFINED (RassetItemMain->RassetItemMain));
+        END RassetItemMain_RassetItemPart; 
+
+    END CoreGeolRasset;
+END AssetItemPart.
+        
