@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.5.0-fc023c8d2d8cd44d792927e45dc80c1ad973f095" VERSION="2.3"><MODELS><MODEL NAME="NoTopicStruct" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<NoTopicStruct.TopicA BID="NoTopicStruct.TopicA">
+<NoTopicStruct.TopicA.Person TID="1"><Address><NoTopicStruct.Address><Name>David Signer</Name><Street>mystreet</Street></NoTopicStruct.Address></Address><Remark>onentry</Remark></NoTopicStruct.TopicA.Person>
+</NoTopicStruct.TopicA>
+</DATASECTION>
+</TRANSFER>

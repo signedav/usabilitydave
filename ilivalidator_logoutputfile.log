@@ -1,0 +1,47 @@
+Info: ilivalidator-1.11.11-7fe2fc6d0d60f6cf364085c81f06360c31229a71
+Info: ili2c-5.2.3-3ec7a10e9bacc87e149a14a7f11a6035e0481c69
+Info: iox-ili-1.21.7-a3b5f1ee56a96cc8c6668896c40b81cb7192b11d
+Info: User <dave>
+Info: Start date 2021-09-24 12:09
+Info: maxMemory 3566592 KB
+Info: dataFile </home/dave/unvalidated_assetpart_export.xtf>
+Info: modelNames <AssetItemPart>
+Info: modeldir <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels;/home/dave/dev/gh_signedav/usabilitydave/>
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/dev/signenotes/opengisch/technical_notes/Interlis/course/Tools/ilivalidator/ilimodels/>
+Warning: Folder /home/dave/dev/signenotes/opengisch/technical_notes/Interlis/course/Tools/ilivalidator/ilimodels doesn't exist; ignored
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/dev/gh_signedav/usabilitydave/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.kgk-cgc.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.llv.li/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://repositorio.proadmintierra.info/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.opengis.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.ai.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.kgk-cgc.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.ar.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.be.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.bl.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.bs.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.gl.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.gr.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.lu.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.sg.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.sh.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.sz.ch/>
+Warning: model SZ_Waldabstandslinien_20161021: no version without precursor; model ignored
+Warning: model SZ_Laermempfindlichkeitsstufen_20160209: no version without precursor; model ignored
+Warning: model SZ_Waldgrenzen_20161026: no version without precursor; model ignored
+Warning: model SZQuellen20130522: no version without precursor; model ignored
+Warning: model SZ_Domains_V1_3: no version without precursor; model ignored
+Warning: model SZ_Domains_V1_4: no version without precursor; model ignored
+Warning: model SZ_Nutzungsplanung_kantonal_20170216: no version without precursor; model ignored
+Warning: model SZ_kantonale_Biotopschutzobjekte_20161220: no version without precursor; model ignored
+Warning: model SZ_Nutzungsplanung_20160125: no version without precursor; model ignored
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.ti.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.kgk-cgc.ch/ilisite.xml/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://models.geo.zg.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.geo.zh.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository <https://signedav.github.io/usabilitydave/>
+Error: AssetItemPart: model(s) not found

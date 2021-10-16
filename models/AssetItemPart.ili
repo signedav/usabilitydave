@@ -7,10 +7,14 @@ MODEL AssetItemPart (en)
 AT "https://signedav.github.io/usabilitydave/models"
 VERSION "2020-06-22" =
 
+    IMPORTS GeometryCHLV95_V1, Units;
+
     TOPIC CoreGeolAsset =
+        OID AS INTERLIS.UUIDOID;
         !! CLASS
         CLASS AssetItem (ABSTRACT) =
             Name: TEXT;
+            Point: GeometryCHLV95_V1.Coord2;
         END AssetItem;
 
         !! CLASS
@@ -32,43 +36,46 @@ VERSION "2020-06-22" =
 
     END CoreGeolAsset;
 
-    TOPIC CoreGeolPasset =
+    TOPIC CoreGeolBoolAsset =
+        OID AS INTERLIS.UUIDOID;
         !! CLASS
-        CLASS PassetItem =
+        CLASS BoolAssetItem =
             Name: TEXT;
             IsMain: BOOLEAN;
-        END PassetItem;
+            Point: GeometryCHLV95_V1.Coord2;
+        END BoolAssetItem;
 
         !! Ein Asset kann beliebig viele Teile (AssetParts) enthalten. Ein AssetPart gehört zu einem Asset
-        ASSOCIATION PassetItemMain_PassetItemPart =
+        ASSOCIATION BoolAssetItemMain_BoolAssetItemPart =
             !! Asset aus dem der AssetPart extrahiert wurde
-            PassetItemMain -- {0..1} PassetItem;
+            BoolAssetItemMain -- {0..1} BoolAssetItem;
             !! AssetPart
-            PassetItemPart-- {0..*} PassetItem;
+            BoolAssetItemPart-- {0..*} BoolAssetItem;
             MANDATORY CONSTRAINT
-                PassetItemMain->IsMain AND NOT (PassetItemPart->IsMain);
-        END PassetItemMain_PassetItemPart; 
+                BoolAssetItemMain->IsMain AND NOT (BoolAssetItemPart->IsMain);
+        END BoolAssetItemMain_BoolAssetItemPart; 
 
 
-    END CoreGeolPasset;
+    END CoreGeolBoolAsset;
 
-    TOPIC CoreGeolRasset =
+    TOPIC CoreGeolTrickAsset =
+        OID AS INTERLIS.UUIDOID;
         !! CLASS
-        CLASS RassetItem =
+        CLASS TrickAssetItem =
             Name: TEXT;
-            IsMain: BOOLEAN;
-        END RassetItem;
+            Point: GeometryCHLV95_V1.Coord2;
+        END TrickAssetItem;
 
         !! Ein Asset kann beliebig viele Teile (AssetParts) enthalten. Ein AssetPart gehört zu einem Asset
-        ASSOCIATION RassetItemMain_RassetItemPart =
+        ASSOCIATION TrickAssetItemMain_TrickAssetItemPart =
             !! Asset aus dem der AssetPart extrahiert wurde
-            RassetItemMain -- {0..1} RassetItem;
+            TrickAssetItemMain -- {0..1} TrickAssetItem;
             !! AssetPart
-            RassetItemPart-- {0..*} RassetItem;
+            TrickAssetItemPart-- {0..*} TrickAssetItem;
             MANDATORY CONSTRAINT
-                NOT (DEFINED (RassetItemMain->RassetItemMain));
-        END RassetItemMain_RassetItemPart; 
+                NOT (DEFINED (TrickAssetItemMain->TrickAssetItemMain));
+        END TrickAssetItemMain_TrickAssetItemPart; 
 
-    END CoreGeolRasset;
+    END CoreGeolTrickAsset;
 END AssetItemPart.
         

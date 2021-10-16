@@ -1,0 +1,63 @@
+INTERLIS 2.3;
+
+MODEL Building_Parcel_Property (de)
+AT "mailto:bjsvwneu@localhost"
+VERSION "2021-10-06"  =
+  IMPORTS GeometryCHLV95_V1,Units,AdministrativeUnitsCH_V1,CHAdminCodes_V1;
+
+  TOPIC Building_Parcel_Property =
+
+    DOMAIN
+
+      Property_Type = (
+        /** house has multiple owners per flat, german: Stockwerkeigentum
+         */
+        !!@ ili2db.dispName = "condominium ownership (ownership per flat)"
+        condominium_ownership,
+        /** german: Gesamteigentum
+         */
+        !!@ ili2db.dispName = "total ownership (Gesamteigentum)"
+        total_ownership,
+        /** multiple owners, german: Miteigentum
+         */
+        !!@ ili2db.dispName = "joint ownership (multiple owners)"
+        joint_ownership,
+        /** single owner, german: Alleineigentum
+         */
+        !!@ ili2db.dispName = "wholly owned (single owner)"
+        wholly_owned
+      );
+
+    CLASS Parcel =
+      Geometrie : MANDATORY AREA WITH (ARCS,STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS>0.001;
+      EGRID : MANDATORY TEXT*14;
+      !!@ ili2db.dispName = "Parcel Number"
+      Number : MANDATORY 1 .. 10000;
+      Area : MANDATORY 5 .. 100000000 [Units.m2];
+      !!@ ili2db.dispName = "BFS-Nr"
+      BFS_Nr : MANDATORY CHAdminCodes_V1.CHMunicipalityCode;
+    END Parcel;
+
+    CLASS Person =
+      !!@ ili2db.dispName = "AHV-Nr"
+      AHV_Nr : MANDATORY 7560000000000 .. 7569999999999;
+      !!@ ili2db.dispName = "Birthdate"
+      Birth_Date : MANDATORY FORMAT INTERLIS.XMLDate "1800-1-1" .. "2100-1-1";
+      !!@ ili2db.dispName = "Family Name"
+      Name : MANDATORY TEXT*255;
+      !!@ ili2db.dispName = "Middle Name(s)"
+      Middle_Names : TEXT*255;
+      !!@ ili2db.dispName = "First Name"
+      First_Name : MANDATORY TEXT*255;
+    END Person;
+
+    ASSOCIATION Property =
+      Person -- {1..*} Person;
+      Parcel -- {0..*} Parcel;
+      property_type : MANDATORY Property_Type;
+      ownership_share : MANDATORY 0 .. 100 [Units.Percent];
+    END Property;
+
+  END Building_Parcel_Property;
+
+END Building_Parcel_Property.

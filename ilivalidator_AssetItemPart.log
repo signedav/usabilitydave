@@ -1,0 +1,29 @@
+Info: ilivalidator-1.11.11-7fe2fc6d0d60f6cf364085c81f06360c31229a71
+Info: ili2c-5.2.3-3ec7a10e9bacc87e149a14a7f11a6035e0481c69
+Info: iox-ili-1.21.7-a3b5f1ee56a96cc8c6668896c40b81cb7192b11d
+Info: User <dave>
+Info: Start date 2021-09-24 12:12
+Info: maxMemory 3566592 KB
+Info: dataFile </home/dave/unvalidated_assetpart_export.xtf>
+Info: modelNames <AssetItemPart>
+Info: modeldir <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels;/home/dave/dev/gh_signedav/usabilitydave/models/>
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/>
+Info: lookup model <AssetItemPart> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/dev/signenotes/opengisch/technical_notes/Interlis/course/Tools/ilivalidator/ilimodels/>
+Warning: Folder /home/dave/dev/signenotes/opengisch/technical_notes/Interlis/course/Tools/ilivalidator/ilimodels doesn't exist; ignored
+Info: lookup model <AssetItemPart> 2.3 in repository </home/dave/dev/gh_signedav/usabilitydave/models/>
+Info: ilifile </home/dave/dev/gh_signedav/usabilitydave/models/AssetItemPart.ili>
+Info: validate data...
+Info: assume unknown external objects
+Info: first validation pass...
+Info: second validation pass...
+Info: validate target of role AssetItemPart.CoreGeolTrickAsset.TrickAssetItemMain_TrickAssetItemPart.TrickAssetItemMain...
+Info: validate multiplicity of role AssetItemPart.CoreGeolTrickAsset.TrickAssetItemMain_TrickAssetItemPart.TrickAssetItemMain...
+Info: validate multiplicity of role AssetItemPart.CoreGeolTrickAsset.TrickAssetItemMain_TrickAssetItemPart.TrickAssetItemPart...
+Info: validate mandatory constraint AssetItemPart.CoreGeolTrickAsset.TrickAssetItemMain_TrickAssetItemPart.Constraint1...
+Error: line 10: AssetItemPart.CoreGeolTrickAsset.TrickAssetItem: tid 7: Mandatory Constraint AssetItemPart.CoreGeolTrickAsset.TrickAssetItemMain_TrickAssetItemPart.Constraint1 is not true.
+Info: /home/dave/unvalidated_assetpart_export.xtf: AssetItemPart.CoreGeolAsset BID=89a92125-d449-4426-8eaf-933129b47470
+Info: /home/dave/unvalidated_assetpart_export.xtf: AssetItemPart.CoreGeolBoolAsset BID=5b2d3341-adfc-43f2-833f-e8a8dfe4eaeb
+Info: /home/dave/unvalidated_assetpart_export.xtf: AssetItemPart.CoreGeolTrickAsset BID=63eaa20e-ac4e-4554-870d-ce99c0ac4d6a
+Info:       3 objects in CLASS AssetItemPart.CoreGeolTrickAsset.TrickAssetItem
+Info: ...validation failed
