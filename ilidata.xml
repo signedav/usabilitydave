@@ -19,14 +19,14 @@
         <version>2021-01-06</version>
         <owner>mailto:signedav@gmail.com</owner>
         <title>
-          <DatasetIdx16.MultilingualMText>
+          <DatasetIdx16.MultilingualText>
             <LocalisedText>
-              <DatasetIdx16.LocalisedMText>
+              <DatasetIdx16.LocalisedText>
                 <Language>de</Language>
                 <Text>Einfaches Styling und Tree (Dave's Bakery Shop)</Text>
-              </DatasetIdx16.LocalisedMText>
+              </DatasetIdx16.LocalisedText>
             </LocalisedText>
-          </DatasetIdx16.MultilingualMText>
+          </DatasetIdx16.MultilingualText>
         </title>
         <categories>
           <DatasetIdx16.Code_>
