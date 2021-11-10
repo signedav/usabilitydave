@@ -93,5 +93,106 @@
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
    </DatasetIdx16.DataIndex>
+
+       <DatasetIdx16.DataIndex.DatasetMetadata TID="1c1dcd90-082b-4816-b4f0-193b3344675c">
+        <id>ch.dave.ili.config.wildruhezonen</id>
+        <version>2021-01-06</version>
+        <owner>mailto:signedav@gmail.com</owner>
+        <title>
+          <DatasetIdx16.MultilingualText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedText>
+                <Language>de</Language>
+                <Text>Styling und Tree für Wildruhezonen</Text>
+              </DatasetIdx16.LocalisedText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualText>
+        </title>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/model/Wildruhezonen_LV95_V2_1</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/metaconfig</value>
+          </DatasetIdx16.Code_>
+          <DatasetIdx16.Code_>
+            <value>http://codes.opengis.ch/modelbaker</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>metaconfig/wildruhezonen.ini</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="70b28592-fa05-4089-b54e-4cec3b629658">
+        <id>ch.topping.wildruhezonen.yaml</id>
+        <version>2021-01-20</version>
+        <owner>mailto:signedav@gmail.com</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/layertree</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>layertree/wildruhezonen.yaml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="70b28592-fa05-4089-b54e-4cec3b629658">
+        <id>ch.topping.wildruhezonen.toml</id>
+        <version>2021-01-20</version>
+        <owner>mailto:signedav@gmail.com</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/toml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>toml/wildruhezonen.toml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="faaedb17-c3b2-40b1-8323-ff1e55e1fb6b">
+        <id>ch.topping.wildruhezonen.wildruhezone_teilobjekt.qml</id>
+        <version>2021-01-20</version>
+        <owner>mailto:signedav@gmail.com</owner>
+        <categories>
+          <DatasetIdx16.Code_>
+            <value>http://codes.interlis.ch/type/qml</value>
+          </DatasetIdx16.Code_>
+        </categories>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>text/plain;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>qml/wildruhezonen_wildruhezone_teilgebiet.qml</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+   </DatasetIdx16.DataIndex>
   </DATASECTION>
 </TRANSFER>
