@@ -12,11 +12,11 @@
 				<shortDescription>Weitere Sites des usabiltydave test repositories</shortDescription>
 				<Owner>https://signedav.github.io/usabilitydave</Owner>
 				<technicalContact>mailto:david@opengis.ch</technicalContact>
-				<subsidiarySite>
+				<parentSite>
 					<IliSite09.RepositoryLocation_>
 						<value>https://models.opengis.ch</value>
 					</IliSite09.RepositoryLocation_>
-				</subsidiarySite>
+				</parentSite>
 			</IliSite09.SiteMetadata.Site>
 		</IliSite09.SiteMetadata>
 	</DATASECTION>
