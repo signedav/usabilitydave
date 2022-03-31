@@ -92,7 +92,6 @@
           </DatasetIdx16.DataFile>
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
-   </DatasetIdx16.DataIndex>
 
        <DatasetIdx16.DataIndex.DatasetMetadata TID="1c1dcd90-082b-4816-b4f0-193b3344675c">
         <id>ch.dave.ili.config.wildruhezonen</id>
