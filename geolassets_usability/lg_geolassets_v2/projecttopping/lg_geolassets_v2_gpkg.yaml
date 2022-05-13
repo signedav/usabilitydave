@@ -25,6 +25,7 @@ layertree:
         definitionfile: "ilidata:lg_geolassets_v2.qgis_layerdefinition_hintergrundkarten"
     - "Hilfstabellen":
         group: true
+        expanded: false
         child-nodes:
           - "Address":
               qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_address"
@@ -54,3 +55,18 @@ layertree:
               qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_natrelitem"
           - "StatusWorkItem":
               qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_statusworkitem"
+          - "AssetItem_Contact_Author":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_author"
+          - "AssetItem_Contact_Initiator":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_initiator"
+          - "AssetItem_Contact_Supplier":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_contact_supplier"
+          - "AssetItem_Publication":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_publication"
+          - "AssetItem_UsedBy":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitem_usedby"
+          - "AssetItemX_AssetItemY":
+              qmlstylefile: "ilidata:lg_geolassets_v2.qgis_layerstyle_assetitemx_assetitemy"
+
+properties:
+    transaction_mode: "AutomaticGroups"

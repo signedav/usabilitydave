@@ -5,38 +5,8 @@
 		</MODELS>
 	</HEADERSECTION>
 	<DATASECTION>
-		<DatasetIdx16.DataIndex BID="dbca8f50-8e39-408a-a0d9-38eccf2e4e85">
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="860a66a2-de0b-41fc-8d9d-fda0fc286dcc">
-				<id>lg_geolassets_v2.qgis_referenceData_ilidata_bkp</id>
-				<version>2022-05-11</version>
-				<publishingDate>2022-05-31</publishingDate>
-				<owner>mailto:info@swisstopo.ch</owner>
-				<title>
-					<DatasetIdx16.MultilingualText>
-						<LocalisedText>
-							<DatasetIdx16.LocalisedText>
-								<Text>QGIS referenceData file for lg_geolassets_v2 - ilidata_bkp</Text>
-							</DatasetIdx16.LocalisedText>
-						</LocalisedText>
-					</DatasetIdx16.MultilingualText>
-				</title>
-				<categories>
-					<DatasetIdx16.Code_>
-						<value>http://codes.interlis.ch/type/referenceData</value>
-					</DatasetIdx16.Code_>
-				</categories>
-				<files>
-					<DatasetIdx16.DataFile>
-						<fileFormat>application/xml</fileFormat>
-						<file>
-							<DatasetIdx16.File>
-								<path>./ilidata_bkp.xml</path>
-							</DatasetIdx16.File>
-						</file>
-					</DatasetIdx16.DataFile>
-				</files>
-			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="e68d020a-19b5-48d6-9de4-8b8d804f660b">
+		<DatasetIdx16.DataIndex BID="6bda22c6-51b4-48d0-9e13-4ed64d41e85e">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="a425df0e-ca3d-49fe-96ff-72ccb8b457d8">
 				<id>lg_geolassets_v2.qgis_metaconfig_lg_geolassets_V2_gpkg</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -69,7 +39,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="363a13f2-9766-4772-be9b-302e6fd12009">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="5f5d8e63-4aed-4750-981c-9b09c9e746df">
 				<id>lg_geolassets_v2.qgis_referenceData_LG_GeolAssetsCatalogues_V2</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -99,7 +69,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="35ba0de4-b19f-49fb-a088-4b4ac8ae22d0">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="09c0473f-d083-4a58-bbad-b6aa9282f86d">
 				<id>lg_geolassets_v2.qgis_referenceData_GeolAssetsCatalogues_V2</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -129,7 +99,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="2b5d53bc-5520-4a54-a2a0-822ddd21610a">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="fbc49e8e-a0c3-4c23-9aff-da406b9f3872">
 				<id>lg_geolassets_v2.qgis_projecttopping_lg_geolassets_v2_gpkg</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -159,7 +129,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="fe7f245d-f77f-4cb6-82a5-630bd80db65a">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="55014aa7-f9b1-491e-b9a7-b7451c2aa56e">
 				<id>lg_geolassets_v2.qgis_layerstyle_id</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -189,7 +159,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="591bb4bb-9397-419a-9323-251bd0257dcd">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="2ec31d94-6cce-41f6-b89d-ff5094a28caf">
 				<id>lg_geolassets_v2.qgis_layerstyle_assetformatitem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -219,7 +189,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="30d32fbc-160b-4128-a3f0-858b5be71ee8">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="c6f56340-1c9a-4534-875a-394dc8faea1e">
 				<id>lg_geolassets_v2.qgis_layerstyle_publication</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -249,7 +219,37 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="c14df906-7746-4a17-8ebb-2c32f2311b3e">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="c536d919-b7a7-494a-8eb5-e77e89bd8886">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitem_contact_author</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitem_contact_author</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitem_contact_author.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="1cba8265-d014-4075-8f60-0fda94339a3d">
 				<id>lg_geolassets_v2.qgis_layerstyle_assetobjectinfo</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -279,7 +279,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="80370a87-8833-4293-992d-905b9079ceb7">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="ec6fb524-94d5-4048-9b26-a05156034d3a">
 				<id>lg_geolassets_v2.qgis_layerstyle_legaldoc</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -309,7 +309,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="58c96c9f-6661-4542-a9b2-818e13b1ed17">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="0ece91be-efa6-4d4e-aae0-c255d3891493">
 				<id>lg_geolassets_v2.qgis_layerstyle_address</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -339,7 +339,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="7928ae00-418a-49cf-9e5e-f31afc2c1377">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="f6ca0e78-aefa-4768-bed4-9c6aef27821b">
 				<id>lg_geolassets_v2.qgis_layerstyle_mancatlabelitem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -369,7 +369,67 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="6a3b26e1-2a4b-4926-9e89-05744800f3ce">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="19a39a6f-d3c5-45b3-8f6c-125009528684">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitemx_assetitemy</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitemx_assetitemy</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitemx_assetitemy.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="2758189e-e4b5-4559-9b8c-413090f159a5">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitem_contact_supplier</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitem_contact_supplier</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitem_contact_supplier.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="0760eec0-37c0-4830-984d-eefd022022c3">
 				<id>lg_geolassets_v2.qgis_layerstyle_studyarea</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -399,7 +459,37 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="51901009-95ca-4311-9b64-903036bc34ea">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="c4454bc5-5d10-4f84-9471-a8c3ab70b5ea">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitem_usedby</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitem_usedby</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitem_usedby.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="e1faefd6-cdc3-4754-8d12-c0a28e80225f">
 				<id>lg_geolassets_v2.qgis_layerstyle_internaluse</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -429,7 +519,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="1076afeb-c948-46a0-9005-ac3eae32b20f">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="b93ad452-2c89-45f4-9bdb-a840631bfd53">
 				<id>lg_geolassets_v2.qgis_layerstyle_contact</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -459,7 +549,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="d39f17bf-318a-40b7-821b-4d4767de1f95">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="2ae9f429-ee4a-4c47-8728-66a3f34aa2ce">
 				<id>lg_geolassets_v2.qgis_layerstyle_assetitem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -489,7 +579,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="db62a754-909f-452e-bab1-55db303d7e64">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="c5a0b1d5-75db-46e0-896e-a0904daae0bd">
 				<id>lg_geolassets_v2.qgis_layerstyle_statuswork</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -519,7 +609,37 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="1f795e54-d37a-454f-be5a-f2b676b45296">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="f8fbe1af-596d-4374-ae57-a93a7530b125">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitem_publication</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitem_publication</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitem_publication.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="aa1946fa-ea33-476e-ad44-7d6f5e129a86">
 				<id>lg_geolassets_v2.qgis_layerstyle_autocat</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -549,7 +669,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="37c130d7-bf98-4477-a6d2-2c13261a3dad">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="c1de138f-57db-4fe4-87d0-8f15095c46d6">
 				<id>lg_geolassets_v2.qgis_layerstyle_assetkinditem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -579,7 +699,37 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="affb2104-89e5-4778-9e48-4f4121ff5065">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="f5aacf9f-fc0a-4db6-90f4-4a4ebdd4bc47">
+				<id>lg_geolassets_v2.qgis_layerstyle_assetitem_contact_initiator</id>
+				<version>2022-05-11</version>
+				<publishingDate>2022-05-31</publishingDate>
+				<owner>mailto:info@swisstopo.ch</owner>
+				<title>
+					<DatasetIdx16.MultilingualText>
+						<LocalisedText>
+							<DatasetIdx16.LocalisedText>
+								<Text>QGIS layerstyle file for lg_geolassets_v2 - assetitem_contact_initiator</Text>
+							</DatasetIdx16.LocalisedText>
+						</LocalisedText>
+					</DatasetIdx16.MultilingualText>
+				</title>
+				<categories>
+					<DatasetIdx16.Code_>
+						<value>http://codes.interlis.ch/type/layerstyle</value>
+					</DatasetIdx16.Code_>
+				</categories>
+				<files>
+					<DatasetIdx16.DataFile>
+						<fileFormat>text/plain</fileFormat>
+						<file>
+							<DatasetIdx16.File>
+								<path>./lg_geolassets_v2/layerstyle/assetitem_contact_initiator.qml</path>
+							</DatasetIdx16.File>
+						</file>
+					</DatasetIdx16.DataFile>
+				</files>
+			</DatasetIdx16.DataIndex.DatasetMetadata>
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="4e3a49dd-7f48-42a9-b3dd-db59b4bdcc09">
 				<id>lg_geolassets_v2.qgis_layerstyle_statusworkitem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -609,7 +759,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="3db061d9-9415-405d-a6e6-c3ced456f427">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="3ab029cc-7a5e-4ad2-8f0a-17f698d5884c">
 				<id>lg_geolassets_v2.qgis_layerstyle_typenatrel</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -639,7 +789,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="1584e539-2043-4ff2-becc-e4a15b43c5c2">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="7d67ec7d-a447-4fed-b8dc-cde69e1dc53a">
 				<id>lg_geolassets_v2.qgis_layerstyle_natrelitem</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -669,7 +819,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="7d9e8828-5a6f-44e0-b2ae-9a7c34ee25fc">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="e037dfc7-f89e-43ed-a670-25c37f40cb42">
 				<id>lg_geolassets_v2.qgis_layerstyle_internalproject</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -699,7 +849,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="d6ac388c-29d4-489c-907b-43e97b4a0f3f">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="4168ffd4-60b8-4fff-b898-dbbd1a44f570">
 				<id>lg_geolassets_v2.qgis_layerstyle_publicuse</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -729,7 +879,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="da27f871-b226-4ad0-a12e-570b6beee192">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="dd6d068b-3144-40fc-a4fd-599b95298981">
 				<id>lg_geolassets_v2.qgis_layerstyle_studylocation</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -759,7 +909,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="03c8cd16-4781-4ff7-a16a-8060cea8a3c8">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="de115498-73ba-47b8-a775-6cc68a8bba7d">
 				<id>lg_geolassets_v2.qgis_layerstyle_studytrace</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
@@ -789,7 +939,7 @@
 					</DatasetIdx16.DataFile>
 				</files>
 			</DatasetIdx16.DataIndex.DatasetMetadata>
-			<DatasetIdx16.DataIndex.DatasetMetadata TID="0270cafe-43c9-495b-8e82-09de99a84549">
+			<DatasetIdx16.DataIndex.DatasetMetadata TID="da394f94-e43a-450c-844a-b0a3429c915e">
 				<id>lg_geolassets_v2.qgis_layerdefinition_hintergrundkarten</id>
 				<version>2022-05-11</version>
 				<publishingDate>2022-05-31</publishingDate>
