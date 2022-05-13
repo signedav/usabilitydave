@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" version="3.25.0-Master" labelsEnabled="0" simplifyDrawingTol="1" simplifyMaxScale="1" simplifyAlgorithm="0" symbologyReferenceScale="-1" maxScale="0" simplifyDrawingHints="0" simplifyLocal="1" minScale="100000000" hasScaleBasedVisibilityFlag="0" readOnly="0">
+<qgis hasScaleBasedVisibilityFlag="0" styleCategories="LayerConfiguration|Symbology|Symbology3D|Labeling|Fields|Forms|Actions|MapTips|Diagrams|AttributeTable|Rendering|CustomProperties|GeometryOptions|Temporal|Legend|Elevation|Notes" labelsEnabled="0" simplifyDrawingHints="0" symbologyReferenceScale="-1" maxScale="0" version="3.25.0-Master" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" minScale="100000000" simplifyAlgorithm="0" readOnly="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal fixedDuration="0" limitMode="0" mode="0" accumulate="0" startExpression="" startField="" durationField="" enabled="0" endExpression="" durationUnit="min" endField="">
+  <temporal durationField="" fixedDuration="0" enabled="0" mode="0" startField="" endExpression="" endField="" startExpression="" durationUnit="min" limitMode="0" accumulate="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation zscale="1" extrusionEnabled="0" clamping="Terrain" respectLayerSymbol="1" zoffset="0" extrusion="0" binding="Centroid">
+  <elevation zoffset="0" zscale="1" binding="Centroid" extrusion="0" clamping="Terrain" respectLayerSymbol="1" extrusionEnabled="0">
     <data-defined-properties>
       <Option type="Map">
         <Option value="" type="QString" name="name"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="line" alpha="1" name="" is_animated="0">
+      <symbol is_animated="0" type="line" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -29,7 +29,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleLine" locked="0" pass="0">
           <Option type="Map">
             <Option value="0" type="QString" name="align_dash_pattern"/>
             <Option value="square" type="QString" name="capstyle"/>
@@ -97,7 +97,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="fill" alpha="1" name="" is_animated="0">
+      <symbol is_animated="0" type="fill" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -105,7 +105,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
             <Option value="232,113,141,255" type="QString" name="color"/>
@@ -141,7 +141,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="marker" alpha="1" name="" is_animated="0">
+      <symbol is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -149,7 +149,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
@@ -201,14 +201,14 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0" referencescale="-1">
+  <renderer-v2 type="RuleRenderer" symbollevels="0" referencescale="-1" enableorderby="0" forceraster="0">
     <rules key="{d2c54199-a9a7-40a5-9328-5cb98b803b3d}">
-      <rule label="Public" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}" filter="attribute(get_feature('PublicUse', 'lg_glssts_vssts_ssttem_publicuse',assetitem_lg_geolssts_v2geolassets_assetitem),'isavailable')" symbol="0"/>
-      <rule label="Internal" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}" filter="attribute(get_feature('InternalUse', 'lg_glssts_vssts_ssttem_internaluse',&quot;assetitem_lg_geolssts_v2geolassets_assetitem&quot; ),'isavailable') " symbol="1"/>
-      <rule label="Not Available" key="{e337de7f-e7ff-420b-bfcd-d2d3fd1ac48d}" filter="ELSE" symbol="2"/>
+      <rule symbol="0" label="Public" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}" filter="attribute(get_feature('PublicUse', 'lg_glssts_vssts_ssttem_publicuse',assetitem_lg_geolssts_v2geolassets_assetitem),'isavailable')"/>
+      <rule symbol="1" label="Internal" key="{71159bf5-027c-46b0-9c0a-cca14e76d58b}" filter="attribute(get_feature('InternalUse', 'lg_glssts_vssts_ssttem_internaluse',&quot;assetitem_lg_geolssts_v2geolassets_assetitem&quot; ),'isavailable') "/>
+      <rule symbol="2" label="Not Available" key="{e337de7f-e7ff-420b-bfcd-d2d3fd1ac48d}" filter="ELSE"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="marker" alpha="1" name="0" is_animated="0">
+      <symbol is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -216,18 +216,18 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
-            <Option value="82,116,68,161" type="QString" name="color"/>
+            <Option value="218,253,216,255" type="QString" name="color"/>
             <Option value="1" type="QString" name="horizontal_anchor_point"/>
             <Option value="bevel" type="QString" name="joinstyle"/>
             <Option value="circle" type="QString" name="name"/>
             <Option value="0,0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
             <Option value="MM" type="QString" name="offset_unit"/>
-            <Option value="82,116,68,255" type="QString" name="outline_color"/>
+            <Option value="0,0,0,255" type="QString" name="outline_color"/>
             <Option value="solid" type="QString" name="outline_style"/>
             <Option value="0" type="QString" name="outline_width"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
@@ -240,14 +240,14 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="82,116,68,161"/>
+          <prop k="color" v="218,253,216,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="82,116,68,255"/>
+          <prop k="outline_color" v="0,0,0,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0"/>
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -266,7 +266,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="marker" alpha="1" name="1" is_animated="0">
+      <symbol is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="1">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -274,18 +274,18 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
-            <Option value="202,201,127,161" type="QString" name="color"/>
+            <Option value="254,209,147,255" type="QString" name="color"/>
             <Option value="1" type="QString" name="horizontal_anchor_point"/>
             <Option value="bevel" type="QString" name="joinstyle"/>
             <Option value="circle" type="QString" name="name"/>
             <Option value="0,0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
             <Option value="MM" type="QString" name="offset_unit"/>
-            <Option value="202,201,127,255" type="QString" name="outline_color"/>
+            <Option value="0,0,0,255" type="QString" name="outline_color"/>
             <Option value="solid" type="QString" name="outline_style"/>
             <Option value="0" type="QString" name="outline_width"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
@@ -298,14 +298,14 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="202,201,127,161"/>
+          <prop k="color" v="254,209,147,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="202,201,127,255"/>
+          <prop k="outline_color" v="0,0,0,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0"/>
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -324,7 +324,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="marker" alpha="1" name="2" is_animated="0">
+      <symbol is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="2">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -332,18 +332,18 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
+        <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
-            <Option value="116,65,66,161" type="QString" name="color"/>
+            <Option value="246,71,137,255" type="QString" name="color"/>
             <Option value="1" type="QString" name="horizontal_anchor_point"/>
             <Option value="bevel" type="QString" name="joinstyle"/>
             <Option value="circle" type="QString" name="name"/>
             <Option value="0,0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
             <Option value="MM" type="QString" name="offset_unit"/>
-            <Option value="116,65,66,255" type="QString" name="outline_color"/>
+            <Option value="0,0,0,255" type="QString" name="outline_color"/>
             <Option value="solid" type="QString" name="outline_style"/>
             <Option value="0" type="QString" name="outline_width"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
@@ -356,14 +356,14 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="116,65,66,161"/>
+          <prop k="color" v="246,71,137,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="circle"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="116,65,66,255"/>
+          <prop k="outline_color" v="0,0,0,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0"/>
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -391,7 +391,6 @@
       <Option value="{}" type="QString" name="QFieldSync/photo_naming"/>
       <Option type="List" name="dualview/previewExpressions">
         <Option value="if(length(geom_to_wkt( $geometry ))>22,substr(geom_to_wkt( $geometry ),0,23)||'...',geom_to_wkt( $geometry ))" type="QString"/>
-        <Option value="&quot;T_Ili_Tid&quot;" type="QString"/>
       </Option>
       <Option value="0" type="int" name="embeddedWidgets/count"/>
       <Option type="StringList" name="variableNames">
@@ -405,12 +404,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory sizeType="MM" opacity="1" lineSizeType="MM" direction="0" minimumSize="0" rotationOffset="270" penAlpha="255" penWidth="0" enabled="0" width="15" sizeScale="3x:0,0,0,0,0,0" height="15" spacing="5" maxScaleDenominator="1e+08" penColor="#000000" spacingUnit="MM" minScaleDenominator="0" backgroundColor="#ffffff" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" backgroundAlpha="255" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" barWidth="5" showAxis="1" scaleBasedVisibility="0">
-      <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute label="" field="" color="#000000"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory penColor="#000000" direction="0" opacity="1" penWidth="0" width="15" sizeType="MM" diagramOrientation="Up" scaleDependency="Area" height="15" backgroundColor="#ffffff" spacingUnit="MM" penAlpha="255" spacing="5" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" enabled="0" sizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" showAxis="1" spacingUnitScale="3x:0,0,0,0,0,0" barWidth="5" minScaleDenominator="0" scaleBasedVisibility="0" rotationOffset="270" labelPlacementMethod="XHeight" minimumSize="0" lineSizeType="MM">
+      <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+      <attribute field="" label="" color="#000000"/>
       <axisSymbol>
-        <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" type="line" alpha="1" name="" is_animated="0">
+        <symbol is_animated="0" type="line" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="">
           <data_defined_properties>
             <Option type="Map">
               <Option value="" type="QString" name="name"/>
@@ -418,7 +417,7 @@
               <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" locked="0" pass="0" enabled="1">
+          <layer enabled="1" class="SimpleLine" locked="0" pass="0">
             <Option type="Map">
               <Option value="0" type="QString" name="align_dash_pattern"/>
               <Option value="square" type="QString" name="capstyle"/>
@@ -487,7 +486,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings zIndex="0" showAll="1" placement="0" priority="0" linePlacementFlags="18" obstacle="0" dist="0">
+  <DiagramLayerSettings obstacle="0" showAll="1" placement="0" linePlacementFlags="18" priority="0" zIndex="0" dist="0">
     <properties>
       <Option type="Map">
         <Option value="" type="QString" name="name"/>
@@ -496,34 +495,20 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0.001" removeDuplicateNodes="1">
+  <geometryOptions removeDuplicateNodes="1" geometryPrecision="0.001">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend type="default-vector" showLabelLegend="0"/>
-  <referencedLayers>
-    <relation referencingLayer="StudyLocation_641385d5_d6c4_4f4d_8aea_7dbf8bf91f4e" providerKey="ogr" id="studylocation_T_basket_T_ILI2DB_BASKET_T_Id" layerId="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" dataSource="./lg_geolAssets_v2_data.gpkg|layername=T_ILI2DB_BASKET" referencedLayer="T_ILI2DB_BASKET_24d5e8f0_9bd3_4c3c_a60d_4ffe4cc4876c" layerName="T_ILI2DB_BASKET" name="studylocation_T_basket_T_ILI2DB_BASKET_T_Id" strength="Association">
-      <fieldRef referencedField="T_Id" referencingField="T_basket"/>
-    </relation>
-    <relation referencingLayer="StudyLocation_641385d5_d6c4_4f4d_8aea_7dbf8bf91f4e" providerKey="ogr" id="studylocation_assetitem_assetitem_assetitem_T_Id" layerId="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e" dataSource="./lg_geolAssets_v2_data.gpkg|layername=assetitem" referencedLayer="AssetItem_f833c131_b74c_463e_9eba_18f17a3cf41e" layerName="AssetItem" name="studylocation_assetitem_assetitem_assetitem_T_Id" strength="Composition">
-      <fieldRef referencedField="T_Id" referencingField="assetitem_assetitem"/>
-    </relation>
-    <relation referencingLayer="StudyLocation_641385d5_d6c4_4f4d_8aea_7dbf8bf91f4e" providerKey="ogr" id="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" layerId="AssetItem_655d7d08_f608_4aef_b23f_9bfc2ff514b1" dataSource="./lg_geolAssets_v2_data.gpkg|layername=lg_geolssts_v2geolassets_assetitem" referencedLayer="AssetItem_655d7d08_f608_4aef_b23f_9bfc2ff514b1" layerName="AssetItem" name="studylocation_assetitem_lg_geolssts_v2geolassets_assetitem_lg_geolssts_v2geolassets_assetitem_T_Id" strength="Composition">
-      <fieldRef referencedField="T_Id" referencingField="assetitem_lg_geolssts_v2geolassets_assetitem"/>
-    </relation>
-    <relation referencingLayer="StudyLocation_641385d5_d6c4_4f4d_8aea_7dbf8bf91f4e" providerKey="ogr" id="studylocation_geomquality_geomqualityitem_T_Id" layerId="GeomQualityItem_d5e58ca5_2d80_4618_8ce6_3a17f2dcbed8" dataSource="./lg_geolAssets_v2_data.gpkg|layername=geomqualityitem" referencedLayer="GeomQualityItem_d5e58ca5_2d80_4618_8ce6_3a17f2dcbed8" layerName="GeomQualityItem" name="studylocation_geomquality_geomqualityitem_T_Id" strength="Association">
-      <fieldRef referencedField="T_Id" referencingField="geomquality"/>
-    </relation>
-  </referencedLayers>
+  <legend showLabelLegend="0" type="default-vector"/>
   <fieldConfiguration>
-    <field name="T_Id" configurationFlags="None">
+    <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_basket" configurationFlags="None">
+    <field configurationFlags="None" name="T_basket">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -531,7 +516,7 @@
             <Option value="false" type="bool" name="AllowNULL"/>
             <Option value="false" type="bool" name="ChainFilters"/>
             <Option value="&quot;topic&quot; = 'LGGeolAssets_V2.GeolAssets' and attribute(get_feature('T_ILI2DB_DATASET', 't_id', &quot;dataset&quot;), 'datasetname') != 'Catalogueset'" type="QString" name="FilterExpression"/>
-            <Option name="FilterFields"/>
+            <Option type="invalid" name="FilterFields"/>
             <Option value="false" type="bool" name="MapIdentification"/>
             <Option value="true" type="bool" name="OrderByValue"/>
             <Option value="false" type="bool" name="ReadOnly"/>
@@ -546,7 +531,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="T_Ili_Tid" configurationFlags="None">
+    <field configurationFlags="None" name="T_Ili_Tid">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -556,7 +541,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="geomquality" configurationFlags="None">
+    <field configurationFlags="None" name="geomquality">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -579,7 +564,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="assetitem_assetitem" configurationFlags="None">
+    <field configurationFlags="None" name="assetitem_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -599,7 +584,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="assetitem_lg_geolssts_v2geolassets_assetitem" configurationFlags="None">
+    <field configurationFlags="None" name="assetitem_lg_geolssts_v2geolassets_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -629,20 +614,20 @@
     <alias field="assetitem_lg_geolssts_v2geolassets_assetitem" index="5" name="AssetItem"/>
   </aliases>
   <defaults>
-    <default expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" field="T_Id" applyOnUpdate="0"/>
-    <default expression="@default_basket_lg_geolassets_v2_geolassets" field="T_basket" applyOnUpdate="0"/>
-    <default expression="substr(uuid(), 2, 36)" field="T_Ili_Tid" applyOnUpdate="0"/>
-    <default expression="" field="geomquality" applyOnUpdate="0"/>
-    <default expression="" field="assetitem_assetitem" applyOnUpdate="0"/>
-    <default expression="" field="assetitem_lg_geolssts_v2geolassets_assetitem" applyOnUpdate="0"/>
+    <default field="T_Id" applyOnUpdate="0" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))"/>
+    <default field="T_basket" applyOnUpdate="0" expression="@default_basket_lg_geolassets_v2_geolassets"/>
+    <default field="T_Ili_Tid" applyOnUpdate="0" expression="substr(uuid(), 2, 36)"/>
+    <default field="geomquality" applyOnUpdate="0" expression=""/>
+    <default field="assetitem_assetitem" applyOnUpdate="0" expression=""/>
+    <default field="assetitem_lg_geolssts_v2geolassets_assetitem" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" field="T_Id" exp_strength="0" constraints="3" notnull_strength="1"/>
-    <constraint unique_strength="0" field="T_basket" exp_strength="0" constraints="1" notnull_strength="1"/>
-    <constraint unique_strength="0" field="T_Ili_Tid" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="geomquality" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="assetitem_assetitem" exp_strength="0" constraints="0" notnull_strength="0"/>
-    <constraint unique_strength="0" field="assetitem_lg_geolssts_v2geolassets_assetitem" exp_strength="0" constraints="1" notnull_strength="1"/>
+    <constraint field="T_Id" notnull_strength="1" constraints="3" exp_strength="0" unique_strength="1"/>
+    <constraint field="T_basket" notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0"/>
+    <constraint field="T_Ili_Tid" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+    <constraint field="geomquality" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+    <constraint field="assetitem_assetitem" notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0"/>
+    <constraint field="assetitem_lg_geolssts_v2geolassets_assetitem" notnull_strength="1" constraints="1" exp_strength="0" unique_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint field="T_Id" exp="" desc=""/>
@@ -656,15 +641,15 @@
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
-      <column type="field" name="T_Id" width="-1" hidden="0"/>
-      <column type="field" name="T_basket" width="-1" hidden="0"/>
-      <column type="field" name="T_Ili_Tid" width="-1" hidden="0"/>
-      <column type="field" name="geomquality" width="-1" hidden="0"/>
-      <column type="field" name="assetitem_assetitem" width="-1" hidden="0"/>
-      <column type="field" name="assetitem_lg_geolssts_v2geolassets_assetitem" width="-1" hidden="0"/>
-      <column type="actions" width="-1" hidden="1"/>
+      <column hidden="0" type="field" width="-1" name="T_Id"/>
+      <column hidden="0" type="field" width="-1" name="T_basket"/>
+      <column hidden="0" type="field" width="-1" name="T_Ili_Tid"/>
+      <column hidden="0" type="field" width="-1" name="geomquality"/>
+      <column hidden="0" type="field" width="-1" name="assetitem_assetitem"/>
+      <column hidden="0" type="field" width="-1" name="assetitem_lg_geolssts_v2geolassets_assetitem"/>
+      <column hidden="1" type="actions" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -714,12 +699,12 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="geomquality"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="T_Id" reuseLastValue="0"/>
-    <field name="T_Ili_Tid" reuseLastValue="0"/>
-    <field name="T_basket" reuseLastValue="0"/>
-    <field name="assetitem_assetitem" reuseLastValue="0"/>
-    <field name="assetitem_lg_geolssts_v2geolassets_assetitem" reuseLastValue="0"/>
-    <field name="geomquality" reuseLastValue="0"/>
+    <field reuseLastValue="0" name="T_Id"/>
+    <field reuseLastValue="0" name="T_Ili_Tid"/>
+    <field reuseLastValue="0" name="T_basket"/>
+    <field reuseLastValue="0" name="assetitem_assetitem"/>
+    <field reuseLastValue="0" name="assetitem_lg_geolssts_v2geolassets_assetitem"/>
+    <field reuseLastValue="0" name="geomquality"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
