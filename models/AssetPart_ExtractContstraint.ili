@@ -1,0 +1,63 @@
+INTERLIS 2.3;
+
+MODEL AssetPart_ExtractContstraint (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+    IMPORTS UNQUALIFIED INTERLIS;
+    TOPIC Assets =
+
+        /*
+        Wenn isExtract, dann braucht es auch einen Parent.
+
+        AssociationPath = [ '\' ] AssociationAccess-Name.
+
+        Rollenangabe: Die Rollenangabe ist gültig, wenn nur eine einzige entsprechende Rolle existiert.
+        Die Rollenangabe kann dabei sowohl eine Aus gangsrolle (gemäss der das aktuelle Objekt mit der
+        Beziehungsinstanz verbunden ist) wie eine Zielrolle (gemäss der die Beziehungsinstanz mit dem
+        Bezugsobjekt verbunden ist) ansprechen. Ist die Rollenangabe durch den Beziehungsnamen er-
+        gänzt, kann sie nur Ausgangsrollen ansprechen. Je nach Stellung des Pfadelementes im Pfad
+        werden die Rollen unterschiedlich gesucht. Ist die Rollenangabe das erste P fadelement eines Pfa-
+        des, wird die Rolle in allen Beziehungszugängen der Klasse gesucht, in deren K ontext der Pfad
+        Anwendung findet. Ist die Rollenangabe ein Folgelement des P fades, wird die Rolle in allen Asso-
+        ziationen gesucht, die im Thema verfügbar sind, in dem die Klasse definiert ist, in deren Kontext
+        der P fad Anwendung findet. Dabei kommen nur diejenigen Assoziationen in Frage, die über Rollen
+        mit der Klasse des Vorgängerobjektes des Pfades in Bezug stehen.
+
+        Als Beziehungszugang (AssociationAccess) wird die Möglichkeit bezeichnet, aus der Sicht eines Objek-
+        tes gemäss einer Beziehung zu den B eziehungsinstanzen und weiter zu den Bezugsobjekten zu navigie-
+        ren. Beziehungszugänge müssen nicht definiert werden, sondern entstehen mit der Definition einer Be-
+        ziehung für alle über Rollen zugeordnet en Klassen, die im gleichen Thema wie die B eziehung definiert
+        wurden. Ist eine an einer Beziehung beteiligte Klasse in einem anderen Thema definiert (themenübergrei-
+        fende B eziehung) oder soll es zulässig sein, dass ein der Rolle entsprechendes Bezugsobjekt in einem
+        anderen Behälter als die B eziehungsinstanz liegen darf, muss dies bei der Rolle speziell angemerkt wer-
+        den (E XTE RNAL, vgl. Kapitel 2.7.1 Beschreibung von B eziehungen und K apitel 2.6.3 Referenzattribute).
+        Die Klasse erhält dann keine Beziehungszugänge. Diese Eigenschaft wird in der B asisdefinition einer
+        Beziehung festgelegt und kann in einer Erweiterung nicht mehr verändert werden. Bezieht sich eine Rolle
+        auf eine vom geerbten Thema geerbte Klasse, sind Beziehungszugänge aus dieser Klasse nur möglich,
+        wenn diese Klasse im aktuellen Thema mit gleichem Namen erweitert wurde (E XTENDE D). Durch diese
+        Einschränkungen wird vermieden, dass eine Klasse nachträglich (d.h. ausserhalb des Rahmens, in dem
+        sie definiert wurde) nochmals eine Änderung erfährt.
+        */
+        
+        CLASS AssetItem =
+            Name: TEXT;
+            isExtract: BOOLEAN;
+        END AssetItem;
+
+        ASSOCIATION Asset_Asset =
+            AssetMain -- {0..1} AssetItem;
+            AssetPart -- {0..*} AssetItem;
+          END Asset_Asset;
+ 
+        /* der muss unterhalb von association und class sein */
+        CONSTRAINTS OF AssetItem =
+            SET CONSTRAINT WHERE isExtract:
+                DEFINED(\AssetMain);
+        END;
+
+    END Assets; !! of TOPIC
+
+END AssetPart_ExtractContstraint. !! of MODEL
+

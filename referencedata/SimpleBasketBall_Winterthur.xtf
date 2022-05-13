@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="SimpleBasketBall" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SimpleBasketBall.Grounds BID="44860555-37ae-4bdd-af4c-6d09bdf4c61f">
+<SimpleBasketBall.Grounds.Arena TID="beba55a1-8800-4b14-8093-7bbf08fc3140"><Name>Schützenwiese</Name><Seats>500</Seats></SimpleBasketBall.Grounds.Arena>
+<SimpleBasketBall.Grounds.Arena TID="7a722f58-6941-48b4-b6e1-812d87592ac6"><Name>Eulachhalle</Name><Seats>350</Seats></SimpleBasketBall.Grounds.Arena>
+<SimpleBasketBall.Grounds.Arena TID="6d0ce6e1-0608-4458-a7de-dca73eeda193"><Name>Eishalle Deutweg</Name><Seats>2000</Seats></SimpleBasketBall.Grounds.Arena>
+<SimpleBasketBall.Grounds.Arena TID="d4ceff7e-c653-4da7-af53-f025f0789301"><Name>Daves Hinterhof</Name><Seats>10</Seats></SimpleBasketBall.Grounds.Arena>
+<SimpleBasketBall.Grounds.Arena TID="61b58328-c84b-442b-8c3b-586cd86585cc"><Name>Sulzer Arena</Name><Seats>8000</Seats></SimpleBasketBall.Grounds.Arena>
+</SimpleBasketBall.Grounds>
+</DATASECTION>
+</TRANSFER>

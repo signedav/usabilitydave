@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="SimpleNoBasketBall" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SimpleNoBasketBall.Grounds BID="44860555-37ae-4bdd-af4c-6d09bdf4c61f">
+<SimpleNoBasketBall.Grounds.Arena TID="beba55a1-8800-4b14-8093-7bbf08fc3141"><Name>Kraftfeld</Name><Seats>500</Seats></SimpleNoBasketBall.Grounds.Arena>
+<SimpleNoBasketBall.Grounds.Arena TID="7a722f58-6941-48b4-b6e1-812d87592ac1"><Name>Salzhaus</Name><Seats>350</Seats></SimpleNoBasketBall.Grounds.Arena>
+</SimpleNoBasketBall.Grounds>
+</DATASECTION>
+</TRANSFER>

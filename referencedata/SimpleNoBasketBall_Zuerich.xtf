@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="SimpleNoBasketBall" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SimpleNoBasketBall.Grounds BID="97a5c286-0d94-4bf5-999e-da3e05990838">
+<SimpleNoBasketBall.Grounds.Arena TID="bda552c3-9c0c-4337-9f47-10a44cb71255"><Name>Hinterhof Totalbar</Name><Seats>22</Seats></SimpleNoBasketBall.Grounds.Arena>
+<SimpleNoBasketBall.Grounds.Arena TID="2038b01c-2739-4b71-9cb4-755374032659"><Name>Olympiakos</Name><Seats>200</Seats></SimpleNoBasketBall.Grounds.Arena>
+<SimpleNoBasketBall.Grounds.Arena TID="943a3de5-c513-402d-ae57-b28d07bbe5ba"><Name>Hallenstadion</Name><Seats>200</Seats></SimpleNoBasketBall.Grounds.Arena>
+</SimpleNoBasketBall.Grounds>
+</DATASECTION>
+</TRANSFER>

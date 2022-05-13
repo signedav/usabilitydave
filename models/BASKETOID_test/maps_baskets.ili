@@ -1,0 +1,14 @@
+INTERLIS 2.3;
+
+MODEL Maps_V1 (en)
+AT "mailto:U80863546@localhost"
+VERSION "2021-12-15"  =
+
+  TOPIC Maps =
+    OID AS INTERLIS.UUIDOID;
+	CLASS Map = 
+	  Map_Name : TEXT;
+	END Map;
+  END Maps;
+  
+END Maps_V1. 

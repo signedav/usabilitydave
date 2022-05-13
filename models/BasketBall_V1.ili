@@ -1,0 +1,32 @@
+INTERLIS 2.3;
+
+MODEL BasketBall (en)
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2020-06-22" =
+
+    STRUCTURE Address =
+        Street: TEXT;
+        Number: TEXT;
+    END Address;
+
+    TOPIC Administration =
+        CLASS Office  =
+            Description : MANDATORY TEXT*99;
+            Address : Address;
+        END Office;
+    END Administration;
+
+    TOPIC Grounds =
+        CLASS Field  =
+            Name : MANDATORY TEXT*99;
+            Address : Address;
+            Floor : MANDATORY TEXT*99;
+        END Field;
+        CLASS Arena  =
+            Name : MANDATORY TEXT*99;
+            Seats: MANDATORY 0 .. 9999;
+            Address : Address;
+        END Arena;
+    END Grounds;
+
+END BasketBall.

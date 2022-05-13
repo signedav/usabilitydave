@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="SimpleNoBasketBall" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SimpleNoBasketBall.Grounds BID="SimpleNoBasketBall.Grounds">
+<SimpleNoBasketBall.Grounds.Arena TID="e0ba3a22-7a96-41e8-97ee-4cbece85a4b4"><Name>Stadion 1</Name><Seats>23</Seats></SimpleNoBasketBall.Grounds.Arena>
+<SimpleNoBasketBall.Grounds.Arena TID="a255dfa6-7059-4125-af20-94543a207ed9"><Name>Fancy Stadion</Name><Seats>2000</Seats></SimpleNoBasketBall.Grounds.Arena>
+</SimpleNoBasketBall.Grounds>
+</DATASECTION>
+</TRANSFER>

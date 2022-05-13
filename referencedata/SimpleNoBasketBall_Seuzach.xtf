@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="SimpleNoBasketBall" VERSION="2020-06-22" URI="https://signedav.github.io/usabilitydave/models"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SimpleNoBasketBall.Grounds BID="9e267acf-a889-401e-962a-9a3f9f75988a">
+<SimpleNoBasketBall.Grounds.Arena TID="fba2f76e-82de-44f1-bec0-1cb4c62cfbb1"><Name>Stadion Seuzi</Name><Seats>450</Seats></SimpleNoBasketBall.Grounds.Arena>
+</SimpleNoBasketBall.Grounds>
+</DATASECTION>
+</TRANSFER>

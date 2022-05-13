@@ -1,0 +1,21 @@
+INTERLIS 2.3;
+
+MODEL RecursiveAssets_V2 (en)
+AT "https://www.swisstopo.ch"
+VERSION "2022-04-06" =
+
+  TOPIC RecursiveAssets =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS AssetItem =
+      TitlePublic : TEXT;
+    END AssetItem;
+
+    ASSOCIATION AssetItemX_AssetItemY =
+      AssetItemX -- {0..*} AssetItem;
+      AssetItemY -- {0..*} AssetItem;
+    END AssetItemX_AssetItemY;
+
+  END RecursiveAssets;
+
+END RecursiveAssets_V2.

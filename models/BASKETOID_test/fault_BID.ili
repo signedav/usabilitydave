@@ -1,0 +1,43 @@
+
+INTERLIS 2.3;
+
+MODEL FaultsCatalogues_V1 (en) 
+AT "mailto:U80863546@localhost" 
+VERSION "2021-12-15" =
+IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
+
+  TOPIC Catalogues =
+    BASKET OID AS INTERLIS.UUIDOID;
+    OID AS INTERLIS.UUIDOID;
+
+	CLASS FaultHierItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      IdName : MANDATORY TEXT;
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultHierItem;
+
+    STRUCTURE FaultHierRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHierItem;
+    END FaultHierRef;
+  END Catalogues;
+END FaultsCatalogues_V1.
+
+MODEL Faults_V1 (en)
+AT "mailto:U80863546@localhost"
+VERSION "2021-12-15"  =
+
+    IMPORTS FaultsCatalogues_V1;
+
+    TOPIC Faults =
+    BASKET OID AS INTERLIS.UUIDOID;
+    OID AS INTERLIS.UUIDOID;
+    DEPENDS ON FaultsCatalogues_V1.Catalogues; 
+    CLASS Fault = 
+        Fault_Name : TEXT;
+        Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
+    END Fault;
+    END Faults;
+    
+END Faults_V1. 

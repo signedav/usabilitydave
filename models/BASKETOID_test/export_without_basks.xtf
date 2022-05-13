@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2gpkg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="Maps_V1" VERSION="2021-12-15" URI="mailto:U80863546@localhost"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<Maps_V1.Maps BID="Maps_V1.Maps">
+<Maps_V1.Maps.Map TID="3779cdf4-e075-4471-aa51-f44d0af1e2b0"><Map_Name>daves no bask test</Map_Name></Maps_V1.Maps.Map>
+</Maps_V1.Maps>
+</DATASECTION>
+</TRANSFER>
