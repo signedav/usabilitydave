@@ -1,14 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Forms" version="3.25.0-Master">
+<qgis styleCategories="Fields|Forms" version="3.25.0-Master">
   <fieldConfiguration>
-    <field name="T_Id">
+    <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_basket">
+    <field configurationFlags="None" name="T_basket">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -31,14 +31,14 @@
         </config>
       </editWidget>
     </field>
-    <field name="T_Ili_Tid">
+    <field configurationFlags="None" name="T_Ili_Tid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="isnatrel">
+    <field configurationFlags="None" name="isnatrel">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
@@ -49,7 +49,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="datereceipt">
+    <field configurationFlags="None" name="datereceipt">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -62,7 +62,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="municipality">
+    <field configurationFlags="None" name="municipality">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -72,7 +72,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="url">
+    <field configurationFlags="None" name="url">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -82,7 +82,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="relativepath">
+    <field configurationFlags="None" name="relativepath">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -106,7 +106,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="locationanalog">
+    <field configurationFlags="None" name="locationanalog">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -116,7 +116,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="processor">
+    <field configurationFlags="None" name="processor">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -126,7 +126,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="datelastprocessed">
+    <field configurationFlags="None" name="datelastprocessed">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -139,7 +139,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="textbody">
+    <field configurationFlags="None" name="textbody">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -149,7 +149,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="remark">
+    <field configurationFlags="None" name="remark">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -159,7 +159,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="idsgs">
+    <field configurationFlags="None" name="idsgs">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -173,7 +173,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="infogeoldata">
+    <field configurationFlags="None" name="infogeoldata">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -183,7 +183,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="infogeolcontactdata">
+    <field configurationFlags="None" name="infogeolcontactdata">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -193,7 +193,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="infogeolauxdata">
+    <field configurationFlags="None" name="infogeolauxdata">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -203,7 +203,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="titlepublic">
+    <field configurationFlags="None" name="titlepublic">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -213,7 +213,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="titleoriginal">
+    <field configurationFlags="None" name="titleoriginal">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -223,7 +223,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="akind">
+    <field configurationFlags="None" name="akind">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -246,7 +246,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="datecreation">
+    <field configurationFlags="None" name="datecreation">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -259,7 +259,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="alanguage">
+    <field configurationFlags="None" name="alanguage">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -282,7 +282,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="aformat">
+    <field configurationFlags="None" name="aformat">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -302,7 +302,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="authorbiblio">
+    <field configurationFlags="None" name="authorbiblio">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -312,7 +312,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="sourceproject">
+    <field configurationFlags="None" name="sourceproject">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -322,7 +322,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="adescription">
+    <field configurationFlags="None" name="adescription">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -332,7 +332,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="isextract">
+    <field configurationFlags="None" name="isextract">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
@@ -343,7 +343,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="assetitemmain_assetitem">
+    <field configurationFlags="None" name="assetitemmain_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -363,7 +363,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="assetitemmain_lg_geolssts_v2geolassets_assetitem">
+    <field configurationFlags="None" name="assetitemmain_lg_geolssts_v2geolassets_assetitem">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -384,6 +384,131 @@
       </editWidget>
     </field>
   </fieldConfiguration>
+  <aliases>
+    <alias field="T_Id" index="0" name=""/>
+    <alias field="T_basket" index="1" name=""/>
+    <alias field="T_Ili_Tid" index="2" name=""/>
+    <alias field="isnatrel" index="3" name="Ist relevant"/>
+    <alias field="datereceipt" index="4" name="Eingangsdatum"/>
+    <alias field="municipality" index="5" name="Gemeinde"/>
+    <alias field="url" index="6" name="URL zu einer Online-Ressource"/>
+    <alias field="relativepath" index="7" name="File"/>
+    <alias field="locationanalog" index="8" name="Physischer Standort des analogen Dokuments"/>
+    <alias field="processor" index="9" name="Bearbeiter"/>
+    <alias field="datelastprocessed" index="10" name="Letztes Bearbeitungsdatum"/>
+    <alias field="textbody" index="11" name="Textkörper"/>
+    <alias field="remark" index="12" name="Sonstige Bemerkungen"/>
+    <alias field="idsgs" index="13" name="IDSGS"/>
+    <alias field="infogeoldata" index="14" name="Daten"/>
+    <alias field="infogeolcontactdata" index="15" name="Kontaktinformationen"/>
+    <alias field="infogeolauxdata" index="16" name="Auxiliary Information"/>
+    <alias field="titlepublic" index="17" name="Öffentlicher Titel"/>
+    <alias field="titleoriginal" index="18" name="Original Titel"/>
+    <alias field="akind" index="19" name="Art"/>
+    <alias field="datecreation" index="20" name="Asset-Erstellungsdatum"/>
+    <alias field="alanguage" index="21" name="Sprache"/>
+    <alias field="aformat" index="22" name="Format"/>
+    <alias field="authorbiblio" index="23" name="Autoren"/>
+    <alias field="sourceproject" index="24" name="Projekt im Rahmen dessen das Asset erstellt wurde"/>
+    <alias field="adescription" index="25" name="Beschreibung"/>
+    <alias field="isextract" index="26" name="IsExtract"/>
+    <alias field="assetitemmain_assetitem" index="27" name="AssetItemMain"/>
+    <alias field="assetitemmain_lg_geolssts_v2geolassets_assetitem" index="28" name="AssetItemMain"/>
+  </aliases>
+  <defaults>
+    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
+    <default field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0"/>
+    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
+    <default field="isnatrel" expression="" applyOnUpdate="0"/>
+    <default field="datereceipt" expression="" applyOnUpdate="0"/>
+    <default field="municipality" expression="" applyOnUpdate="0"/>
+    <default field="url" expression="" applyOnUpdate="0"/>
+    <default field="relativepath" expression="" applyOnUpdate="0"/>
+    <default field="locationanalog" expression="" applyOnUpdate="0"/>
+    <default field="processor" expression="" applyOnUpdate="0"/>
+    <default field="datelastprocessed" expression="" applyOnUpdate="0"/>
+    <default field="textbody" expression="" applyOnUpdate="0"/>
+    <default field="remark" expression="" applyOnUpdate="0"/>
+    <default field="idsgs" expression="" applyOnUpdate="0"/>
+    <default field="infogeoldata" expression="" applyOnUpdate="0"/>
+    <default field="infogeolcontactdata" expression="" applyOnUpdate="0"/>
+    <default field="infogeolauxdata" expression="" applyOnUpdate="0"/>
+    <default field="titlepublic" expression="" applyOnUpdate="0"/>
+    <default field="titleoriginal" expression="" applyOnUpdate="0"/>
+    <default field="akind" expression="" applyOnUpdate="0"/>
+    <default field="datecreation" expression="" applyOnUpdate="0"/>
+    <default field="alanguage" expression="" applyOnUpdate="0"/>
+    <default field="aformat" expression="attribute(get_feature('AssetFormatItem', 'Code', 'pdf'), 'T_Id')" applyOnUpdate="0"/>
+    <default field="authorbiblio" expression="" applyOnUpdate="0"/>
+    <default field="sourceproject" expression="" applyOnUpdate="0"/>
+    <default field="adescription" expression="" applyOnUpdate="0"/>
+    <default field="isextract" expression="false" applyOnUpdate="0"/>
+    <default field="assetitemmain_assetitem" expression="" applyOnUpdate="0"/>
+    <default field="assetitemmain_lg_geolssts_v2geolassets_assetitem" expression="" applyOnUpdate="0"/>
+  </defaults>
+  <constraints>
+    <constraint unique_strength="1" notnull_strength="1" field="T_Id" exp_strength="0" constraints="3"/>
+    <constraint unique_strength="0" notnull_strength="1" field="T_basket" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="T_Ili_Tid" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="isnatrel" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="datereceipt" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="municipality" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="url" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="relativepath" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="locationanalog" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="processor" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="datelastprocessed" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="textbody" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="remark" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="idsgs" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="infogeoldata" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="infogeolcontactdata" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="infogeolauxdata" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="titlepublic" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="titleoriginal" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="akind" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="datecreation" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="alanguage" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="aformat" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="authorbiblio" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="sourceproject" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="adescription" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="isextract" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="assetitemmain_assetitem" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="assetitemmain_lg_geolssts_v2geolassets_assetitem" exp_strength="0" constraints="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint field="T_Id" desc="" exp=""/>
+    <constraint field="T_basket" desc="" exp=""/>
+    <constraint field="T_Ili_Tid" desc="" exp=""/>
+    <constraint field="isnatrel" desc="" exp=""/>
+    <constraint field="datereceipt" desc="" exp=""/>
+    <constraint field="municipality" desc="" exp=""/>
+    <constraint field="url" desc="" exp=""/>
+    <constraint field="relativepath" desc="" exp=""/>
+    <constraint field="locationanalog" desc="" exp=""/>
+    <constraint field="processor" desc="" exp=""/>
+    <constraint field="datelastprocessed" desc="" exp=""/>
+    <constraint field="textbody" desc="" exp=""/>
+    <constraint field="remark" desc="" exp=""/>
+    <constraint field="idsgs" desc="" exp=""/>
+    <constraint field="infogeoldata" desc="" exp=""/>
+    <constraint field="infogeolcontactdata" desc="" exp=""/>
+    <constraint field="infogeolauxdata" desc="" exp=""/>
+    <constraint field="titlepublic" desc="" exp=""/>
+    <constraint field="titleoriginal" desc="" exp=""/>
+    <constraint field="akind" desc="" exp=""/>
+    <constraint field="datecreation" desc="" exp=""/>
+    <constraint field="alanguage" desc="" exp=""/>
+    <constraint field="aformat" desc="" exp=""/>
+    <constraint field="authorbiblio" desc="" exp=""/>
+    <constraint field="sourceproject" desc="" exp=""/>
+    <constraint field="adescription" desc="" exp=""/>
+    <constraint field="isextract" desc="" exp=""/>
+    <constraint field="assetitemmain_assetitem" desc="" exp=""/>
+    <constraint field="assetitemmain_lg_geolssts_v2geolassets_assetitem" desc="" exp=""/>
+  </constraintExpressions>
+  <expressionfields/>
   <editform tolerant="1"></editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>

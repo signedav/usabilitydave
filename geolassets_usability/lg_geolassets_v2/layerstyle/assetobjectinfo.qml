@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="LayerConfiguration|Forms" readOnly="0" version="3.25.0-Master">
+<qgis styleCategories="LayerConfiguration|Fields|Forms" readOnly="0" version="3.25.0-Master">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -7,14 +7,14 @@
     <Private>0</Private>
   </flags>
   <fieldConfiguration>
-    <field name="T_Id">
+    <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_basket">
+    <field configurationFlags="None" name="T_basket">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -37,21 +37,21 @@
         </config>
       </editWidget>
     </field>
-    <field name="T_Ili_Tid">
+    <field configurationFlags="None" name="T_Ili_Tid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_Seq">
+    <field configurationFlags="None" name="T_Seq">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="objectclass">
+    <field configurationFlags="None" name="objectclass">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -74,7 +74,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="objectpage">
+    <field configurationFlags="None" name="objectpage">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -88,7 +88,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="objectbbox">
+    <field configurationFlags="None" name="objectbbox">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -98,7 +98,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="objectscore">
+    <field configurationFlags="None" name="objectscore">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -112,7 +112,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="pathtoimage">
+    <field configurationFlags="None" name="pathtoimage">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -122,7 +122,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="lg_glssts_vssts_ssttem_assetobjectinfo">
+    <field configurationFlags="None" name="lg_glssts_vssts_ssttem_assetobjectinfo">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -143,6 +143,55 @@
       </editWidget>
     </field>
   </fieldConfiguration>
+  <aliases>
+    <alias field="T_Id" index="0" name=""/>
+    <alias field="T_basket" index="1" name=""/>
+    <alias field="T_Ili_Tid" index="2" name=""/>
+    <alias field="T_Seq" index="3" name=""/>
+    <alias field="objectclass" index="4" name="Objektklasse"/>
+    <alias field="objectpage" index="5" name="Seitennummer"/>
+    <alias field="objectbbox" index="6" name="Boundingbox"/>
+    <alias field="objectscore" index="7" name="Score der Vorhersage"/>
+    <alias field="pathtoimage" index="8" name="Pfad"/>
+    <alias field="lg_glssts_vssts_ssttem_assetobjectinfo" index="9" name="AssetObjectInfo"/>
+  </aliases>
+  <defaults>
+    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
+    <default field="T_basket" expression="@default_basket" applyOnUpdate="0"/>
+    <default field="T_Ili_Tid" expression="" applyOnUpdate="0"/>
+    <default field="T_Seq" expression="" applyOnUpdate="0"/>
+    <default field="objectclass" expression="" applyOnUpdate="0"/>
+    <default field="objectpage" expression="" applyOnUpdate="0"/>
+    <default field="objectbbox" expression="" applyOnUpdate="0"/>
+    <default field="objectscore" expression="" applyOnUpdate="0"/>
+    <default field="pathtoimage" expression="" applyOnUpdate="0"/>
+    <default field="lg_glssts_vssts_ssttem_assetobjectinfo" expression="" applyOnUpdate="0"/>
+  </defaults>
+  <constraints>
+    <constraint unique_strength="1" notnull_strength="1" field="T_Id" exp_strength="0" constraints="3"/>
+    <constraint unique_strength="0" notnull_strength="1" field="T_basket" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="T_Ili_Tid" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="T_Seq" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="objectclass" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="objectpage" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="objectbbox" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="objectscore" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="pathtoimage" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="lg_glssts_vssts_ssttem_assetobjectinfo" exp_strength="0" constraints="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint field="T_Id" desc="" exp=""/>
+    <constraint field="T_basket" desc="" exp=""/>
+    <constraint field="T_Ili_Tid" desc="" exp=""/>
+    <constraint field="T_Seq" desc="" exp=""/>
+    <constraint field="objectclass" desc="" exp=""/>
+    <constraint field="objectpage" desc="" exp=""/>
+    <constraint field="objectbbox" desc="" exp=""/>
+    <constraint field="objectscore" desc="" exp=""/>
+    <constraint field="pathtoimage" desc="" exp=""/>
+    <constraint field="lg_glssts_vssts_ssttem_assetobjectinfo" desc="" exp=""/>
+  </constraintExpressions>
+  <expressionfields/>
   <editform tolerant="1"></editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>

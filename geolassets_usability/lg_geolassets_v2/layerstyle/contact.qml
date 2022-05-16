@@ -1,14 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Forms" version="3.25.0-Master">
+<qgis styleCategories="Fields|Forms" version="3.25.0-Master">
   <fieldConfiguration>
-    <field name="T_Id">
+    <field configurationFlags="None" name="T_Id">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="T_basket">
+    <field configurationFlags="None" name="T_basket">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -31,14 +31,14 @@
         </config>
       </editWidget>
     </field>
-    <field name="T_Ili_Tid">
+    <field configurationFlags="None" name="T_Ili_Tid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="idzad">
+    <field configurationFlags="None" name="idzad">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -48,7 +48,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="akind">
+    <field configurationFlags="None" name="akind">
       <editWidget type="RelationReference">
         <config>
           <Option type="Map">
@@ -71,7 +71,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="aname">
+    <field configurationFlags="None" name="aname">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -81,7 +81,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="telefon">
+    <field configurationFlags="None" name="telefon">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -91,7 +91,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="email">
+    <field configurationFlags="None" name="email">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -101,7 +101,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="website">
+    <field configurationFlags="None" name="website">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -112,6 +112,51 @@
       </editWidget>
     </field>
   </fieldConfiguration>
+  <aliases>
+    <alias field="T_Id" index="0" name=""/>
+    <alias field="T_basket" index="1" name=""/>
+    <alias field="T_Ili_Tid" index="2" name=""/>
+    <alias field="idzad" index="3" name="IDZAD"/>
+    <alias field="akind" index="4" name="Art"/>
+    <alias field="aname" index="5" name="Name"/>
+    <alias field="telefon" index="6" name="Telefon"/>
+    <alias field="email" index="7" name="Email"/>
+    <alias field="website" index="8" name="Website"/>
+  </aliases>
+  <defaults>
+    <default field="T_Id" expression="sqlite_fetch_and_increment(@layer, 'T_KEY_OBJECT', 'T_LastUniqueId', 'T_Key', 'T_Id', map('T_LastChange','date(''now'')','T_CreateDate','date(''now'')','T_User','''' || @user_account_name || ''''))" applyOnUpdate="0"/>
+    <default field="T_basket" expression="@default_basket_lg_geolassets_v2_geolassets" applyOnUpdate="0"/>
+    <default field="T_Ili_Tid" expression="substr(uuid(), 2, 36)" applyOnUpdate="0"/>
+    <default field="idzad" expression="" applyOnUpdate="0"/>
+    <default field="akind" expression="" applyOnUpdate="0"/>
+    <default field="aname" expression="" applyOnUpdate="0"/>
+    <default field="telefon" expression="" applyOnUpdate="0"/>
+    <default field="email" expression="" applyOnUpdate="0"/>
+    <default field="website" expression="" applyOnUpdate="0"/>
+  </defaults>
+  <constraints>
+    <constraint unique_strength="1" notnull_strength="1" field="T_Id" exp_strength="0" constraints="3"/>
+    <constraint unique_strength="0" notnull_strength="1" field="T_basket" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="T_Ili_Tid" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="idzad" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="1" field="akind" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="1" field="aname" exp_strength="0" constraints="1"/>
+    <constraint unique_strength="0" notnull_strength="0" field="telefon" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="email" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="website" exp_strength="0" constraints="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint field="T_Id" desc="" exp=""/>
+    <constraint field="T_basket" desc="" exp=""/>
+    <constraint field="T_Ili_Tid" desc="" exp=""/>
+    <constraint field="idzad" desc="" exp=""/>
+    <constraint field="akind" desc="" exp=""/>
+    <constraint field="aname" desc="" exp=""/>
+    <constraint field="telefon" desc="" exp=""/>
+    <constraint field="email" desc="" exp=""/>
+    <constraint field="website" desc="" exp=""/>
+  </constraintExpressions>
+  <expressionfields/>
   <editform tolerant="1"></editform>
   <editforminit/>
   <editforminitcodesource>0</editforminitcodesource>
