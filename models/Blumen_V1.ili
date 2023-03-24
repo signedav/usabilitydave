@@ -1,0 +1,38 @@
+
+INTERLIS 2.3;
+MODEL Blumen_V1 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+
+  IMPORTS LocalisationCH_V1,GeometryCHLV95_V1;
+  DOMAIN
+      CHSurface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
+
+  TOPIC Felder =
+    CLASS Feld  =
+      Name : MANDATORY TEXT*99;
+      Geometrie : MANDATORY CHSurface;
+    END Feld;
+    
+    CLASS Feld1 EXTENDS Feld =
+      Feld1Desc : MANDATORY TEXT*99;
+    END Feld1;
+    
+    CLASS Feld2 EXTENDS Feld =
+      Feld2Desc : MANDATORY TEXT*99;
+    END Feld2;
+    
+    CLASS Feld3 EXTENDS Feld =
+      Feld3Desc : MANDATORY TEXT*99;
+    END Feld3;
+
+    CLASS Blume =
+        Name : MANDATORY TEXT;
+    END Blume;
+
+    ASSOCIATION Feld_Blume =
+      Blume -- {0..*} Blume;
+      Feld -- {0..*} Feld;
+      Anteil: 0..100;
+    END Feld_Blume;
+  END Felder;
+
+END Blumen_V1.

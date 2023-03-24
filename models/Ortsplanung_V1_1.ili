@@ -1,0 +1,57 @@
+
+INTERLIS 2.3;
+MODEL OrtsplanungV1_1 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+
+  IMPORTS LocalisationCH_V1,GeometryCHLV95_V1;
+  DOMAIN
+      CHSurface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
+
+  TOPIC Konstruktionen =
+    CLASS Gebaeude  =
+      Name : MANDATORY TEXT*99;
+      Geometrie : MANDATORY OrtsplanungV1_1.CHSurface;
+    END Gebaeude;
+
+    CLASS Strasse =
+        Type : MANDATORY TEXT*99;
+    END Strasse;
+
+    ASSOCIATION Gebaeude_Strasse =
+      Strasse -- {0..1} Strasse;
+      Gebaeude -- {0..*} Gebaeude;
+    END Gebaeude_Strasse;
+  END Konstruktionen;
+
+END OrtsplanungV1_1.
+
+MODEL Erweiterte_OrtsplanungV1_1 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+  IMPORTS OrtsplanungV1_1;
+  
+  TOPIC Gewerbe EXTENDS OrtsplanungV1_1.Konstruktionen =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Gebaeude (EXTENDED) =
+      Firma : TEXT*99;
+    END Gebaeude;
+
+  END Gewerbe;
+
+  TOPIC Freizeit EXTENDS OrtsplanungV1_1.Konstruktionen =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Gebaeude (EXTENDED) =
+      Unterhaltungsart : TEXT*99;
+    END Gebaeude;
+
+  END Freizeit;  
+
+  TOPIC Industrie EXTENDS Erweiterte_OrtsplanungV1_1.Gewerbe =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Gebaeude (EXTENDED) =
+      Sektion : TEXT*99;
+    END Gebaeude;
+
+  END Industrie;
+
+END Erweiterte_OrtsplanungV1_1.

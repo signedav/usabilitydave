@@ -1,0 +1,61 @@
+
+INTERLIS 2.3;
+MODEL Ortsplanung_IDMadness_V1(en) AT "mailto:localhost" VERSION "2021-07-20" =
+
+  DOMAIN
+    TypeID = OID TEXT*60;
+    
+  TOPIC Konstruktionen =
+    CLASS Gebaeude  =
+      Name : MANDATORY TEXT*99;
+    END Gebaeude;
+
+    CLASS StrasseUUID =
+        OID AS INTERLIS.UUIDOID;
+        Type : MANDATORY TEXT*99;
+    END StrasseUUID;
+    CLASS StrasseANY =
+        OID AS INTERLIS.ANYOID;
+        Type : MANDATORY TEXT*99;
+    END StrasseANY;
+    CLASS StrasseSTANDARD =
+        OID AS INTERLIS.STANDARDOID;
+        Type : MANDATORY TEXT*99;
+    END StrasseSTANDARD;
+    CLASS StrasseI32 =
+        OID AS INTERLIS.I32OID;
+        Type : MANDATORY TEXT*99;
+    END StrasseI32;
+    CLASS StrasseUSER =
+        OID AS TypeID;
+        Type : MANDATORY TEXT*99;
+    END StrasseUSER;
+    CLASS StrasseNONE =
+        Type : MANDATORY TEXT*99;
+    END StrasseNONE;
+  END Konstruktionen;
+
+END Ortsplanung_IDMadness_V1.
+
+MODEL Erweiterte_Ortsplanung_IDMadness_V1 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+  IMPORTS Ortsplanung_IDMadness_V1;
+  
+  TOPIC Gewerbe EXTENDS Ortsplanung_IDMadness_V1.Konstruktionen =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS GewerbeGebaeude EXTENDS Gebaeude =
+      Firma : TEXT*99;
+    END GewerbeGebaeude;
+
+  END Gewerbe;
+
+  TOPIC Freizeit EXTENDS Ortsplanung_IDMadness_V1.Konstruktionen =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Gebaeude (EXTENDED) =
+      Unterhaltungsart : TEXT*99;
+    END Gebaeude;
+
+  END Freizeit;
+
+END Erweiterte_Ortsplanung_IDMadness_V1.

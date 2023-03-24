@@ -1,0 +1,44 @@
+
+INTERLIS 2.3;
+MODEL Another_City_V1_1 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+
+  IMPORTS LocalisationCH_V1,GeometryCHLV95_V1;
+  DOMAIN
+      CHSurface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
+
+  TOPIC Constructions =
+    CLASS Building  =
+      Name : MANDATORY TEXT*99;
+      Geometrie : MANDATORY Another_City_V1_1.CHSurface;
+    END Building;
+
+    CLASS Street =
+        Type : MANDATORY TEXT*99;
+    END Street;
+
+    ASSOCIATION Building_Street =
+      Street -- {0..1} Street;
+      Building -- {0..*} Building;
+    END Building_Street;
+  END Constructions;
+
+
+  TOPIC Business EXTENDS Another_City_V1_1.Constructions =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Building (EXTENDED) =
+      Company : TEXT*99;
+    END Building;
+
+  END Business;
+
+  TOPIC Fun EXTENDS Another_City_V1_1.Constructions =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Building (EXTENDED) =
+      Entertainer : TEXT*99;
+    END Building;
+
+  END Fun;
+
+END Another_City_V1_1.

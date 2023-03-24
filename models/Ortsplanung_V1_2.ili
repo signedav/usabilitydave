@@ -1,0 +1,15 @@
+INTERLIS 2.3;
+MODEL OrtsplanungV1_2 (en) AT "mailto:localhost" VERSION "2021-07-20" =
+
+  IMPORTS GeometryCHLV95_V1;
+  DOMAIN
+      CHSurface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
+
+  TOPIC Konstruktionen =
+    CLASS Gebaeude  =
+      Name : MANDATORY TEXT*99;
+      Geometrie : MANDATORY OrtsplanungV1_2.CHSurface;
+    END Gebaeude;
+  END Konstruktionen;
+END OrtsplanungV1_2.
+
