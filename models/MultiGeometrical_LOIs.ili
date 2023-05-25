@@ -1,0 +1,25 @@
+INTERLIS 2.3;
+
+MODEL Simple_MultiGeometrical_LOIs (en) 
+AT "https://signedav.github.io/usabilitydave/models"
+VERSION "2022-06-22" =
+  
+    IMPORTS GeometryCHLV95_V1, Units;
+  
+    DOMAIN
+        Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+        Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
+        
+    TOPIC LOIs =
+
+        CLASS RegionOfInterest =
+            Description: TEXT;
+            Point: GeometryCHLV95_V1.Coord2;
+            Line: Line;
+            Surface: Surface;
+        END RegionOfInterest; 
+
+    END LOIs;
+
+END Simple_MultiGeometrical_LOIs. !! of MODEL
+
