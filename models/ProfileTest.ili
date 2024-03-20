@@ -1,0 +1,31 @@
+INTERLIS 2.3;
+
+MODEL TEST_Profiles_V1 (en)
+AT "https://models.opengis.ch"
+VERSION "2022-01-24" =
+  IMPORTS GeometryCHLV95_V1;
+  
+  DOMAIN
+    /** Geometry definition */
+    Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+
+  STRUCTURE LineStructure =
+    Line : Line;
+  END LineStructure;
+
+  !!@ ili2db.mapping=MultiLine
+  STRUCTURE MultiLine =
+    Lines: BAG {1..*} OF LineStructure;
+  END MultiLine;
+
+  TOPIC Profiles =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Profile =
+      Geometry : MANDATORY MultiLine;
+      Name : TEXT;
+    END Profile;
+
+  END Profiles;
+
+END TEST_Profiles_V1.
